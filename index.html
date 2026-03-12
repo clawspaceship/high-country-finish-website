@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>High Country Finish and Repair CO | Denver Vinyl Wraps, Signs & Window Tint</title>
 <meta name="description" content="Denver's premier vinyl wrap, sign, and window tint specialists. Vehicle wraps, spot graphics, lobby signs, building signs, wall graphics, and commercial window frosting. Serving Denver and surrounding areas."/>
-<meta name="keywords" content="vinyl wrap Denver, vehicle wrap Denver, car wrap Colorado, window tint Denver, frosted glass Denver, lobby signs Denver, building signs Colorado, wall graphics Denver, sign company Denver, High Country Finish"/>
+<meta name="keywords" content="vinyl wrap Denver, vehicle wrap Denver, car wrap Colorado, window tint Denver, frosted glass Denver, lobby signs Denver, building signs Colorado, wall graphics — sign company Denver, High Country Finish"/>
 <meta property="og:title" content="High Country Finish and Repair CO | Denver Vinyl & Sign Specialists"/>
 <meta property="og:description" content="Premium vinyl wraps, signs, and window tint serving Denver and the Front Range."/>
 <meta property="og:type" content="website"/>
@@ -399,7 +399,7 @@ h1.hero-title em {
 }
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 .gallery-item {
@@ -407,13 +407,11 @@ h1.hero-title em {
   overflow: hidden;
   cursor: pointer;
   background: var(--surface2);
+  border-radius: 4px;
 }
-.gallery-item:nth-child(1) { grid-column: span 7; grid-row: span 2; }
-.gallery-item:nth-child(2) { grid-column: span 5; }
-.gallery-item:nth-child(3) { grid-column: span 5; }
-.gallery-item:nth-child(4) { grid-column: span 4; }
-.gallery-item:nth-child(5) { grid-column: span 4; }
-.gallery-item:nth-child(6) { grid-column: span 4; }
+/* First item spans 2 columns and 2 rows for visual impact */
+.gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.gallery-item:nth-child(1) .gallery-img { min-height: 520px; }
 @media(max-width:900px){
   .gallery-grid{grid-template-columns:1fr 1fr;}
   .gallery-item{grid-column:span 1!important;grid-row:span 1!important;}
@@ -424,8 +422,11 @@ h1.hero-title em {
 .gallery-img {
   width: 100%;
   height: 100%;
-  min-height: 240px;
+  min-height: 300px;
+  max-height: 360px;
   object-fit: cover;
+  object-position: center;
+  display: block;
   transition: transform .6s ease;
 }
 .gallery-item:hover .gallery-img { transform: scale(1.04); }
@@ -814,7 +815,7 @@ footer {
         <em>Elevated finish.</em>
       </h1>
       <p class="hero-sub">
-        From vehicle wraps to lobby signs, window tinting to wall graphics â€”
+        From vehicle wraps to lobby signs, window tinting to wall graphics &mdash; 
         we deliver flawless installs for clients who demand the best.
         Serving Denver and the Front Range.
       </p>
@@ -1040,7 +1041,7 @@ footer {
       <div class="process-step reveal reveal-delay-3">
         <div class="step-num">04</div>
         <h3>Done. Guaranteed.</h3>
-        <p>We stand behind every install. If something isn't right, we make it right â€” no questions asked.</p>
+        <p>We stand behind every install. If something isn't right, we make it right &mdash; no questions asked.</p>
       </div>
     </div>
   </div>
@@ -1068,7 +1069,7 @@ footer {
           High Country Finish and Repair CO was built on a simple belief: every install should look like it came from the factory. We don't rush, we don't cut corners, and we don't hand your project off to someone else.
         </p>
         <p class="section-body" style="margin-top:16px;">
-          Based in the Denver metro area, we serve residential and commercial clients across the Front Range â€” from one-off vehicle graphics to complete multi-location sign packages.
+          Based in the Denver metro area, we serve residential and commercial clients across the Front Range &mdash; from from one-off vehicle graphics to complete multi-location sign packages...
         </p>
         <div class="about-badges">
           <div class="badge">
@@ -1076,8 +1077,8 @@ footer {
             Fully Insured
           </div>
           <div class="badge">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Licensed
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            3M Preferred Installer
           </div>
           <div class="badge">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -1360,5 +1361,6 @@ document.getElementById('quote-form').addEventListener('submit', async function(
 </script>
 </body>
 </html>
+
 
 
