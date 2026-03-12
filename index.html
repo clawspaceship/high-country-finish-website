@@ -773,6 +773,87 @@ footer {
   font-family: 'Cormorant Garamond', serif;
   font-size: 24px;
 }
+
+/* ── Featured portfolio grid (homepage) ─────────────────────── */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 280px 280px;
+  gap: 12px;
+}
+.featured-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.featured-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  background: var(--surface2);
+}
+.featured-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform .6s ease;
+}
+.featured-item:hover img { transform: scale(1.04); }
+.featured-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,.75));
+  padding: 1.5rem 1rem .75rem;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.featured-item:hover .featured-overlay { opacity: 1; }
+.featured-overlay span {
+  color: #fff;
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+@media(max-width:900px){
+  .featured-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .featured-large { grid-column: span 2; grid-row: span 1; height: 260px; }
+  .featured-item { height: 200px; }
+}
+@media(max-width:600px){
+  .featured-grid { grid-template-columns: 1fr; }
+  .featured-large { grid-column: span 1; height: 220px; }
+  .featured-item { height: 180px; }
+}
+
+/* ── Mobile call button ──────────────────────────────────────── */
+.mobile-call-btn {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  background: var(--gold);
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 -4px 20px rgba(0,0,0,.4);
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-call-btn svg { width:20px; height:20px; flex-shrink:0; }
+@media(max-width:768px){
+  .mobile-call-btn { display: flex; }
+  /* add padding so footer content isn't hidden behind button */
+  footer { padding-bottom: 5rem !important; }
+}
 </style>
 </head>
 <body>
@@ -927,92 +1008,31 @@ footer {
 <!-- PORTFOLIO -->
 <section id="portfolio">
   <div class="container">
-    <div class="portfolio-header">
-      <div>
-        <span class="section-label reveal">Our Work</span>
-        <h2 class="section-title reveal">Built to impress.<br/>Installed to last.</h2>
+    <div class="section-header" style="text-align:center;margin-bottom:2.5rem;">
+      <span class="section-label reveal">Our Work</span>
+      <h2 class="section-title reveal">Built to Last.<br/>Built to Impress.</h2>
+      <p class="reveal" style="color:var(--text-muted);max-width:540px;margin:0 auto 2rem;">A sample of our recent commercial installs across Denver and the Front Range.</p>
+    </div>
+    <div class="featured-grid reveal">
+      <div class="featured-item featured-large" onclick="window.location='portfolio.html'">
+        <img src="images/omeara-room-wrap.jpg" alt="Full room wall wrap - O'Meara Ford / 106.7 KBPI"/>
+        <div class="featured-overlay"><span>Full Room Wall Wrap &mdash; O'Meara / 106.7 KBPI</span></div>
       </div>
-      <div class="gallery-filter reveal">
-        <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
-        <button class="filter-btn" onclick="filterGallery('wrap', this)">Wraps</button>
-        <button class="filter-btn" onclick="filterGallery('sign', this)">Signs</button>
-        <button class="filter-btn" onclick="filterGallery('window', this)">Windows</button>
-        <button class="filter-btn" onclick="filterGallery('wall', this)">Wall</button>
+      <div class="featured-item" onclick="window.location='portfolio.html'">
+        <img src="images/cybertruck-side.jpg" alt="Cybertruck full side graphics - Black Rock HVAC"/>
+        <div class="featured-overlay"><span>Cybertruck Graphics &mdash; Black Rock HVAC</span></div>
+      </div>
+      <div class="featured-item" onclick="window.location='portfolio.html'">
+        <img src="images/iheart-elevator-wrap.jpg" alt="Elevator door wrap - iHeartMedia"/>
+        <div class="featured-overlay"><span>Elevator Wrap &mdash; iHeartMedia</span></div>
+      </div>
+      <div class="featured-item" onclick="window.location='portfolio.html'">
+        <img src="images/novara-reception.jpg" alt="Dimensional lobby sign - Novara"/>
+        <div class="featured-overlay"><span>Dimensional Lobby Sign &mdash; Novara</span></div>
       </div>
     </div>
-        <div class="gallery-grid" id="gallery">
-      <div class="gallery-item" data-cat="wall" onclick="openModal(this)">
-        <img class="gallery-img" src="images/omeara-room-wrap.jpg" alt="Full room wall wrap — O'Meara Ford radio studio"/>
-        <div class="gallery-overlay"><span class="gallery-label">Full Room Wall Wrap — O'Meara / 106.7 KBPI</span></div>
-      </div>
-      <div class="gallery-item" data-cat="wrap" onclick="openModal(this)">
-        <img class="gallery-img" src="images/cybertruck-rear.jpg" alt="Cybertruck spot graphics"/>
-        <div class="gallery-overlay"><span class="gallery-label">Cybertruck Spot Graphics — Black Rock HVAC</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/novara-reception.jpg" alt="Dimensional lobby sign — Novara"/>
-        <div class="gallery-overlay"><span class="gallery-label">Dimensional Lobby Sign — Novara</span></div>
-      </div>
-      <div class="gallery-item" data-cat="wrap" onclick="openModal(this)">
-        <img class="gallery-img" src="images/iheart-elevator-wrap.jpg" alt="Elevator door wrap — iHeartMedia"/>
-        <div class="gallery-overlay"><span class="gallery-label">Elevator Door Wrap — iHeartMedia</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/westbound-building-sign.jpg" alt="Building sign — Westbound and Down Brewing"/>
-        <div class="gallery-overlay"><span class="gallery-label">Building Sign — Westbound &amp; Down Brewing</span></div>
-      </div>
-      <div class="gallery-item" data-cat="wall" onclick="openModal(this)">
-        <img class="gallery-img" src="images/gque-bbq-mural.jpg" alt="Restaurant wall mural — GQue Championship BBQ"/>
-        <div class="gallery-overlay"><span class="gallery-label">Wall Mural — GQue Championship BBQ</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/kpa-lobby-sign.jpg" alt="Dimensional lobby sign — KPA"/>
-        <div class="gallery-overlay"><span class="gallery-label">Dimensional Lobby Sign — KPA</span></div>
-      </div>
-      <div class="gallery-item" data-cat="wall" onclick="openModal(this)">
-        <img class="gallery-img" src="images/gym-wall-mural.jpg" alt="Gym wall mural"/>
-        <div class="gallery-overlay"><span class="gallery-label">Wall Mural — Fitness Center</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/childrens-museum-donor.jpg" alt="Donor recognition wall — Children's Museum of Denver"/>
-        <div class="gallery-overlay"><span class="gallery-label">Donor Wall — Children's Museum of Denver</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/buffalo-building-sign.jpg" alt="Exterior building sign — The Buffalo"/>
-        <div class="gallery-overlay"><span class="gallery-label">Building Sign — The Buffalo</span></div>
-      </div>
-      <div class="gallery-item" data-cat="wrap" onclick="openModal(this)">
-        <img class="gallery-img" src="images/cybertruck-front.jpg" alt="Cybertruck front graphics"/>
-        <div class="gallery-overlay"><span class="gallery-label">Cybertruck Front Graphics — Black Rock HVAC</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/sea-lobby-sign.jpg" alt="Dimensional lobby sign — S-E-A"/>
-        <div class="gallery-overlay"><span class="gallery-label">Dimensional Lobby Sign — S-E-A</span></div>
-      </div>
-      <div class="gallery-item" data-cat="wall" onclick="openModal(this)">
-        <img class="gallery-img" src="images/omeara-room-wrap-wide.jpg" alt="Broadcast studio room wrap panoramic"/>
-        <div class="gallery-overlay"><span class="gallery-label">Room Wrap Panoramic — Broadcast Studio</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/dog-pony-exterior.jpg" alt="Exterior wall sign — Dog and Pony Grill"/>
-        <div class="gallery-overlay"><span class="gallery-label">Exterior Wall Sign — Dog &amp; Pony Grill</span></div>
-      </div>
-      <div class="gallery-item" data-cat="window" onclick="openModal(this)">
-        <img class="gallery-img" src="images/novara-frosted-glass.jpg" alt="Frosted glass partition — Novara"/>
-        <div class="gallery-overlay"><span class="gallery-label">Frosted Glass Partition — Novara</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/childrens-museum-artstudio.jpg" alt="Interior sign — Children's Museum Art Studio"/>
-        <div class="gallery-overlay"><span class="gallery-label">Dimensional Sign — Children's Museum</span></div>
-      </div>
-      <div class="gallery-item" data-cat="wrap" onclick="openModal(this)">
-        <img class="gallery-img" src="images/cybertruck-side.jpg" alt="Cybertruck full side graphics"/>
-        <div class="gallery-overlay"><span class="gallery-label">Cybertruck Full Side Graphics — Black Rock HVAC</span></div>
-      </div>
-      <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-        <img class="gallery-img" src="images/novara-waiting-area.jpg" alt="Lobby sign waiting area — Novara"/>
-        <div class="gallery-overlay"><span class="gallery-label">Lobby Sign — Novara Waiting Area</span></div>
-      </div>
+    <div style="text-align:center;margin-top:2.5rem;" class="reveal">
+      <a href="portfolio.html" class="btn btn-primary">View Full Portfolio &rarr;</a>
     </div>
   </div>
 </section>
@@ -1359,6 +1379,12 @@ document.getElementById('quote-form').addEventListener('submit', async function(
   }
 });
 </script>
+
+  <!-- Mobile sticky call button -->
+  <a href="tel:3038824656" class="mobile-call-btn" aria-label="Call High Country Finish and Repair">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.4 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.48-1.38a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Now &nbsp;·&nbsp; 303-882-4656
+  </a>
 </body>
 </html>
 
