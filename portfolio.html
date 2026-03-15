@@ -124,6 +124,51 @@ nav.scrolled {
   transition: color .2s;
 }
 .nav-links a:hover { color: var(--text); }
+
+/* Dropdown menu */
+.nav-item {
+  position: relative;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 20px;
+  background: rgba(20, 20, 20, 0.98);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 12px 0;
+  min-width: 220px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+}
+
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown a {
+  display: block;
+  padding: 10px 24px;
+  font-size: 13px;
+  color: var(--muted);
+  transition: all 0.2s;
+}
+
+.nav-dropdown a:hover {
+  background: var(--surface2);
+  color: var(--text);
+  padding-left: 28px;
+}
+
 .nav-links a.active { color: var(--gold); }
 .nav-cta {
   background: var(--gold);
