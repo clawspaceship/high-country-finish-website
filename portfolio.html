@@ -143,8 +143,9 @@ nav.scrolled {
   nav{padding:20px 24px;}
   nav.scrolled{padding:14px 24px;}
   .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(12,12,12,.98);
-    flex-direction:column;justify-content:center;gap:32px;z-index:999;}
+    flex-direction:column;justify-content:center;gap:32px;z-index:10001;}
   .nav-links.open{display:flex;}
+  body.nav-open{overflow:hidden;position:fixed;width:100%;}
   .nav-links a{font-size:18px!important;}
   .nav-toggle{display:flex;z-index:1000;}
 }
@@ -461,11 +462,11 @@ footer {
     <span class="logo-sub">Finish &amp; Repair CO</span>
   </a>
   <ul class="nav-links" id="nav-links">
-    <li><a href="index.html#services">Services</a></li>
-    <li><a href="portfolio.html" class="active">Portfolio</a></li>
-    <li><a href="index.html#process">Process</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#contact" class="nav-cta">Get a Quote</a></li>
+    <li><a onclick="closeNav()" href="index.html#services">Services</a></li>
+    <li><a onclick="closeNav()" href="portfolio.html" class="active">Portfolio</a></li>
+    <li><a onclick="closeNav()" href="index.html#process">Process</a></li>
+    <li><a onclick="closeNav()" href="index.html#about">About</a></li>
+    <li><a onclick="closeNav()" href="index.html#contact" class="nav-cta">Get a Quote</a></li>
   </ul>
   <div class="nav-toggle" id="nav-toggle" onclick="toggleNav()">
     <span></span><span></span><span></span>
@@ -853,7 +854,16 @@ window.addEventListener('scroll', () => {
 
 // ── Mobile nav ──────────────────────────────────────────────
 function toggleNav() {
-  document.getElementById('nav-links').classList.toggle('open');
+  const links = document.getElementById('nav-links');
+  const toggle = document.getElementById('nav-toggle');
+  const isOpen = links.classList.toggle('open');
+  toggle.classList.toggle('is-open', isOpen);
+  document.body.classList.toggle('nav-open', isOpen);
+}
+function closeNav() {
+  document.getElementById('nav-links').classList.remove('open');
+  document.getElementById('nav-toggle').classList.remove('is-open');
+  document.body.classList.remove('nav-open');
 }
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'));
