@@ -2133,6 +2133,19 @@ footer {
   letter-spacing: .4px;
   line-height: 1.4;
 }
+
+/* ── Gallery coming-soon placeholder (scoped) ─────────────────────── */
+.gallery-coming-soon {
+  padding: 48px 24px;
+  border: 1px dashed rgba(201,168,76,.25);
+  border-radius: 4px;
+  color: #888880;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+  text-align: center;
+  background: rgba(28,28,28,.5);
+}
 </style>
 
 <section id="portfolio">
@@ -2147,7 +2160,7 @@ footer {
     <!-- Group 1: Vehicle Wraps -->
     <div class="gallery-group reveal">
       <div class="gallery-group-title">Vehicle Wraps</div>
-      <div class="group-grid cols-2">
+      <div class="group-grid">
 
         <div class="group-item" onclick="openGroupModal(this)">
           <img src="images/cybertruck-side.jpg"
@@ -2155,6 +2168,15 @@ footer {
                loading="lazy"/>
           <div class="group-item-overlay">
             <span class="group-item-caption">Cybertruck — Black Rock Vinyl Lettering</span>
+          </div>
+        </div>
+
+        <div class="group-item" onclick="openGroupModal(this)">
+          <img src="images/cybertruck-front.jpg"
+               alt="Cybertruck vehicle wrap installation - Black Rock vinyl lettering front view Denver"
+               loading="lazy"/>
+          <div class="group-item-overlay">
+            <span class="group-item-caption">Cybertruck — Black Rock Front</span>
           </div>
         </div>
 
@@ -2246,12 +2268,30 @@ footer {
           </div>
         </div>
 
+        <div class="group-item" onclick="openGroupModal(this)">
+          <img src="images/gym-wall-mural.jpg"
+               alt="large format wall mural installation Denver - commercial gym vinyl graphics"
+               loading="lazy"/>
+          <div class="group-item-overlay">
+            <span class="group-item-caption">Commercial Gym — Large Format Wall Mural</span>
+          </div>
+        </div>
+
+        <div class="group-item" onclick="openGroupModal(this)">
+          <img src="images/childrens-museum-artstudio.jpg"
+               alt="dimensional letter installation Denver - Children's Museum art studio wall graphics"
+               loading="lazy"/>
+          <div class="group-item-overlay">
+            <span class="group-item-caption">Children's Museum — Art Studio Dimensional Letters</span>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <!-- Group 4: Elevator & Building Wraps -->
+    <!-- Group 4: Custom & Specialty Installs -->
     <div class="gallery-group reveal">
-      <div class="gallery-group-title">Elevator &amp; Building Wraps</div>
+      <div class="gallery-group-title">Custom &amp; Specialty Installs</div>
       <div class="group-grid cols-1">
 
         <div class="group-item" onclick="openGroupModal(this)">
@@ -2259,13 +2299,19 @@ footer {
                alt="iHeartMedia elevator wrap installation Denver — commercial vinyl elevator door graphics"
                loading="lazy"/>
           <div class="group-item-overlay">
-            <span class="group-item-caption">iHeartMedia — Elevator Wrap</span>
+            <span class="group-item-caption">iHeartMedia — Custom Elevator Door Wrap</span>
           </div>
         </div>
 
       </div>
     </div>
 
+
+    <!-- Group 4b: Window Film & Frosting -->
+    <div class="gallery-group reveal">
+      <div class="gallery-group-title">Window Film &amp; Frosting</div>
+      <div class="gallery-coming-soon">Portfolio photos coming soon</div>
+    </div>
     <!-- Group 5: Exterior Signage -->
     <div class="gallery-group reveal">
       <div class="gallery-group-title">Exterior Signage</div>
@@ -2465,6 +2511,52 @@ function openGroupModal(item) {
   text-align: center;
   margin-top: 32px;
 }
+
+/* ── Coming-soon cell (scoped to portfolio-full) ──────────────────── */
+#portfolio-full .pf-coming-soon-cell {
+  cursor: default;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1c1c1c;
+}
+#portfolio-full .pf-coming-soon-cell:hover img { transform: none; }
+#portfolio-full .pf-coming-soon-text {
+  color: #888880;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+  padding: 32px;
+  text-align: center;
+}
+
+/* ── Category heading label (scoped to portfolio-full) ────────────── */
+#portfolio-full .pf-category-label {
+  margin-bottom: 32px;
+  margin-top: 8px;
+}
+#portfolio-full .pf-category-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #C9A84C;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(201,168,76,.25);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#portfolio-full .pf-category-heading::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background: #C9A84C;
+  flex-shrink: 0;
+}
 </style>
 
 <section id="portfolio-full">
@@ -2519,13 +2611,6 @@ function openGroupModal(item) {
                loading="lazy"/>
           <div class="pf-photo-overlay"></div>
           <div class="pf-caption">Reception Desk Signage</div>
-        </div>
-        <div class="pf-photo-cell" onclick="openGroupModal(this)">
-          <img src="images/novara-waiting-area.jpg"
-               alt="Novara waiting area wall graphics Denver office interior vinyl installation"
-               loading="lazy"/>
-          <div class="pf-photo-overlay"></div>
-          <div class="pf-caption">Waiting Area Graphics</div>
         </div>
       </div>
     </div>
@@ -2634,6 +2719,11 @@ function openGroupModal(item) {
           <div class="pf-caption">Building Sign</div>
         </div>
       </div>
+    </div>
+
+    <!-- ── Custom & Specialty ── -->
+    <div class="pf-category-label reveal">
+      <div class="pf-category-heading">Custom &amp; Specialty</div>
     </div>
 
     <!-- ── 7. iHeartMedia ── -->
@@ -2799,6 +2889,18 @@ function openGroupModal(item) {
       </div>
     </div>
 
+
+    <!-- ── Window Film & Frosting (placeholder) ── -->
+    <div class="pf-project reveal">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Window Film &amp; Frosting</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell pf-coming-soon-cell">
+          <div class="pf-coming-soon-text">Coming soon — portfolio photos being added</div>
+        </div>
+      </div>
+    </div>
     <!-- ── 15. Westbound & Down Brewing ── -->
     <div class="pf-project reveal">
       <div class="pf-project-header">
@@ -2859,20 +2961,13 @@ function openGroupModal(item) {
       <div class="pf-project-header">
         <span class="pf-project-name">Office Directory</span>
       </div>
-      <div class="pf-photos-grid cols-2">
+      <div class="pf-photos-grid cols-1">
         <div class="pf-photo-cell" onclick="openGroupModal(this)">
           <img src="images/office-directory.jpg"
                alt="Commercial office directory board installation Denver — lobby wayfinding signage"
                loading="lazy"/>
           <div class="pf-photo-overlay"></div>
           <div class="pf-caption">Directory Board Installation</div>
-        </div>
-        <div class="pf-photo-cell" onclick="openGroupModal(this)">
-          <img src="images/directory-sign.jpg"
-               alt="Office directory sign installation Denver — interior wayfinding and suite signage"
-               loading="lazy"/>
-          <div class="pf-photo-overlay"></div>
-          <div class="pf-caption">Directory Sign</div>
         </div>
       </div>
     </div>
