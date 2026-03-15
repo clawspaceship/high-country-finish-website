@@ -1419,6 +1419,15 @@ footer {
 
 .footer-brand p { font-size: 13px; color: var(--muted); margin-top: 16px; max-width: 260px; line-height: 1.7; }
 
+
+.footer-col h4 a {
+  color: var(--gold);
+  transition: color 0.2s;
+}
+.footer-col h4 a:hover {
+  color: var(--gold-light);
+}
+
 .footer-col h4 { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 16px; }
 
 .footer-col ul { list-style: none; }
@@ -2832,80 +2841,33 @@ function openGroupModal(item) {
 
   <div class="container">
 
-    <div class="footer-grid">
-
-      <div class="footer-brand">
-
-        <div class="logo-main">High Country</div>
-
-        <div class="logo-sub">Finish &amp; Repair CO</div>
-
-        <p>Denver's premier vinyl wrap, sign, and window tint specialists. Precision installs, every time.</p>
-
-      </div>
-
+        <div class="footer-grid">
       <div class="footer-col">
-
-        <h4>Services</h4>
-
-        <ul>
-
-          <li><a href="#services">Vehicle Wraps</a></li>
-
-          <li><a href="#services">Spot Graphics</a></li>
-
-          <li><a href="#services">Window Tint</a></li>
-
-          <li><a href="#services">Window Frosting</a></li>
-
-          <li><a href="#services">Wall Graphics</a></li>
-
-          <li><a href="#services">Lobby Signs</a></li>
-
-          <li><a href="#services">Building Signs</a></li>
-
-        </ul>
-
+        <h4><a href="/services.html">Services</a></h4>
+        <a href="/services/vehicle-wraps.html">Vehicle Wraps</a>
+        <a href="/services/spot-graphics.html">Spot Graphics</a>
+        <a href="/services/window-tint.html">Window Tint</a>
+        <a href="/services/window-frosting.html">Window Frosting</a>
+        <a href="/services/wall-graphics.html">Wall Graphics</a>
+        <a href="/services/lobby-signs.html">Lobby Signs</a>
+        <a href="/services/building-signs.html">Building Signs</a>
+        <a href="/services/custom-work.html">Custom Work</a>
       </div>
-
       <div class="footer-col">
-
-        <h4>Company</h4>
-
-        <ul>
-
-          <li><a href="#about">About Us</a></li>
-
-          <li><a href="portfolio.html">Portfolio</a></li>
-
-          <li><a href="#process">Our Process</a></li>
-
-          <li><a href="#service-area">Service Area</a></li>
-
-          <li><a href="#contact">Get a Quote</a></li>
-
-        </ul>
-
+        <h4><a href="/about-us.html">Company</a></h4>
+        <a href="/about-us.html">About Us</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/our-process.html">Our Process</a>
+        <a href="/service-area.html">Service Area</a>
+        <a href="/blog.html">Blog</a>
       </div>
-
       <div class="footer-col">
-
         <h4>Contact</h4>
-
-        <ul>
-
-          <li><a href="tel:3038824656">303-882-4656</a></li>
-
-          <li><a href="mailto:highcountryfinishandrepairco@gmail.com" style="word-break:break-word;font-size:12px">highcountryfinishandrepairco<br/>@gmail.com</a></li>
-
-          <li style="margin-top:8px">Denver, CO &amp; Surrounding Areas</li>
-
-        </ul>
-
+        <a href="tel:3038824656">303-882-4656</a>
+        <a href="mailto:highcountryfinishandrepairco@gmail.com">highcountryfinishandrepairco@gmail.com</a>
+        <p style="margin-top:12px;font-size:14px;color:var(--muted);">Denver, CO & surrounding areas</p>
       </div>
-
     </div>
-
     <div class="footer-bottom">
 
       <p>&copy; 2026 High Country Finish and Repair CO. All rights reserved.</p>
@@ -3069,6 +3031,18 @@ document.getElementById('quote-form').addEventListener('submit', async function(
       headers: { 'Accept': 'application/json' }
 
     });
+
+
+// Mobile dropdown toggles
+if (window.innerWidth <= 768) {
+  document.querySelectorAll('.nav-item > a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.target.parentElement.classList.toggle('open');
+    });
+  });
+}
+
 
     if (res.ok) {
 
