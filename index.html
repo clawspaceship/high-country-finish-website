@@ -2600,6 +2600,19 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', function() {
+
 // Mobile menu toggle
 function toggleNav() {
   const links = document.getElementById('nav-links');
@@ -2622,6 +2635,10 @@ function closeNav() {
   }
 }
 
+// Make toggleNav and closeNav available globally for onclick handlers
+window.toggleNav = toggleNav;
+window.closeNav = closeNav;
+
 // Close menu when clicking links (except Services parent)
 document.querySelectorAll('.nav-links a').forEach(a => {
   if (!a.parentElement.classList.contains('nav-item')) {
@@ -2640,6 +2657,7 @@ if (servicesItem) {
         e.preventDefault();
         e.stopPropagation();
         servicesItem.classList.toggle('open');
+        console.log('Services dropdown toggled:', servicesItem.classList.contains('open'));
       }
       // On desktop, allow normal dropdown hover (link still works)
     });
@@ -2650,6 +2668,8 @@ if (servicesItem) {
     link.addEventListener('click', closeNav);
   });
 }
+
+}); // End DOMContentLoaded
 
 </script>
 

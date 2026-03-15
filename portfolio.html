@@ -1189,56 +1189,13 @@ document.addEventListener('keydown', e => {
 
 
 
-// Mobile menu toggle
-function toggleNav() {
-  const links = document.getElementById('nav-links');
-  const toggle = document.getElementById('nav-toggle');
-  const isOpen = links.classList.toggle('open');
-  toggle.classList.toggle('is-open', isOpen);
-  document.body.classList.toggle('nav-open', isOpen);
-}
 
-function closeNav() {
-  const links = document.getElementById('nav-links');
-  const toggle = document.getElementById('nav-toggle');
-  links.classList.remove('open');
-  toggle.classList.remove('is-open');
-  document.body.classList.remove('nav-open');
-  // Also close Services dropdown
-  const servicesItem = document.querySelector('.nav-item');
-  if (servicesItem) {
-    servicesItem.classList.remove('open');
-  }
-}
 
-// Close menu when clicking links (except Services parent)
-document.querySelectorAll('.nav-links a').forEach(a => {
-  if (!a.parentElement.classList.contains('nav-item')) {
-    a.addEventListener('click', closeNav);
-  }
-});
 
-// Mobile Services dropdown toggle - PREVENT NAVIGATION
-const servicesItem = document.querySelector('.nav-item');
-if (servicesItem) {
-  const servicesLink = servicesItem.querySelector('a');
-  if (servicesLink) {
-    servicesLink.addEventListener('click', (e) => {
-      // On mobile, prevent navigation and toggle dropdown
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        e.stopPropagation();
-        servicesItem.classList.toggle('open');
-      }
-      // On desktop, allow normal dropdown hover (link still works)
-    });
-  }
-  
-  // Close menu when clicking dropdown links
-  servicesItem.querySelectorAll('.nav-dropdown a').forEach(link => {
-    link.addEventListener('click', closeNav);
-  });
-}
+
+
+
+
 
 </script>
 
