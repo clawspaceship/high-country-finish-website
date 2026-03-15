@@ -3,209 +3,428 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Portfolio | High Country Finish &amp; Repair CO — Denver Vinyl Wraps, Signs &amp; Graphics</title>
-<meta name="description" content="Browse our portfolio of vehicle wraps, lobby signs, wall murals, window frosting, and commercial graphics across Denver and the Front Range."/>
+<title>Portfolio | High Country Finish &amp; Repair CO — Denver Commercial Vinyl Graphics</title>
+<meta name="description" content="Browse our full portfolio of commercial vinyl graphics and sign installations across Denver and the Front Range. Lobby signs, wall murals, vehicle wraps, and more."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://highcountryfinish.com/portfolio.html"/>
+<meta property="og:title" content="Portfolio | High Country Finish &amp; Repair CO — Denver Commercial Vinyl Graphics"/>
+<meta property="og:description" content="Browse our full portfolio of commercial vinyl graphics and sign installations across Denver and the Front Range. Lobby signs, wall murals, vehicle wraps, and more."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://highcountryfinish.com/portfolio.html"/>
+<meta property="og:image" content="https://highcountryfinish.com/images/peak-elevator-lobby-sign.jpg"/>
+
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
 <style>
-:root {
-  --gold: #c9a84c;
-  --gold-light: #e2c47a;
-  --bg: #0a0a0a;
-  --surface: #111111;
-  --surface2: #1a1a1a;
-  --border: #2a2a2a;
-  --text: #f0ece4;
-  --text-muted: #888880;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
-}
+/* ─── RESET & BASE ─────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 16px; line-height: 1.6; }
-
-/* ── NAV ─────────────────────────────────────────────────────── */
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(10,10,10,.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  padding: .9rem 2rem;
-  display: flex; align-items: center; justify-content: space-between;
+body {
+  background: #0c0c0c;
+  color: #f0ece4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
-.nav-logo { display: flex; flex-direction: column; text-decoration: none; }
-.logo-main { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700; color: var(--text); letter-spacing: .05em; }
-.logo-sub { font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a { color: var(--text-muted); text-decoration: none; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 500; transition: color .2s; }
-.nav-links a:hover, .nav-links a.active { color: var(--gold); }
-.nav-cta { background: var(--gold); color: #000; padding: .5rem 1.2rem; border-radius: 2px; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; transition: background .2s; }
-.nav-cta:hover { background: var(--gold-light); }
-@media(max-width:768px){
-  .nav-links { display: none; }
-  nav { padding: .8rem 1.25rem; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ─── VARIABLES ────────────────────────────────────── */
+:root {
+  --gold:       #C9A84C;
+  --gold-light: #E8C97D;
+  --gold-dark:  #9B7A2B;
+  --black:      #0c0c0c;
+  --surface:    #141414;
+  --surface2:   #1c1c1c;
+  --border:     #2a2a2a;
+  --text:       #f0ece4;
+  --muted:      #888880;
+  --white:      #ffffff;
 }
 
-/* ── HERO ─────────────────────────────────────────────────────── */
-.portfolio-hero {
-  padding: 5rem 2rem 3rem;
-  text-align: center;
-  border-bottom: 1px solid var(--border);
+/* ─── TYPOGRAPHY ───────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 .section-label {
-  display: inline-block;
-  font-size: .7rem;
-  letter-spacing: .2em;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* ─── LAYOUT ───────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media(max-width:768px){ .container{padding:0 24px;} }
+
+/* ─── NAV ──────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background .3s, padding .3s, border-color .3s;
+  border-bottom: 1px solid transparent;
+}
+nav.scrolled {
+  background: rgba(12,12,12,.97);
+  backdrop-filter: blur(12px);
+  padding: 16px 40px;
+  border-color: var(--border);
+}
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.nav-logo .logo-main {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+.nav-logo .logo-sub {
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-top: 3px;
+}
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  align-items: center;
+}
+.nav-links a {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  color: #aaa;
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--gold); }
+.nav-cta {
+  background: var(--gold);
+  color: #000 !important;
+  padding: 10px 22px;
+  border-radius: 2px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background .2s !important;
+}
+.nav-cta:hover { background: var(--gold-light) !important; }
+.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.nav-toggle span { width: 24px; height: 1.5px; background: var(--text); transition: all .3s; }
+@media(max-width:900px){
+  nav{padding:20px 24px;}
+  nav.scrolled{padding:14px 24px;}
+  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(12,12,12,.98);
+    flex-direction:column;justify-content:center;gap:32px;z-index:999;}
+  .nav-links.open{display:flex;}
+  .nav-links a{font-size:18px!important;}
+  .nav-toggle{display:flex;z-index:1000;}
+}
+
+/* ─── PAGE HERO ────────────────────────────────────── */
+.page-hero {
+  padding: 160px 0 80px;
+  background: var(--black);
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.page-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.page-hero-eyebrow span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: .75rem;
 }
-.portfolio-hero h1 {
-  font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+.page-hero-eyebrow::before,
+.page-hero-eyebrow::after {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
 }
-.portfolio-hero p {
-  color: var(--text-muted);
-  max-width: 520px;
-  margin: 0 auto;
-  font-size: .95rem;
+.page-hero h1 {
+  font-size: clamp(44px, 7vw, 80px);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+.page-hero-sub {
+  font-size: 17px;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.75;
+}
+@media(max-width:600px){
+  .page-hero { padding: 130px 0 60px; }
 }
 
-/* ── FILTERS ─────────────────────────────────────────────────── */
-.filter-bar {
-  padding: 1.5rem 2rem;
-  display: flex;
-  gap: .5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 57px;
-  background: var(--bg);
-  z-index: 50;
+/* ─── PORTFOLIO SECTION ────────────────────────────── */
+#portfolio-page {
+  background: var(--black);
+  padding: 80px 0 120px;
 }
-.filter-btn {
-  background: transparent;
+
+/* Project card */
+.pf-project {
+  margin-bottom: 72px;
   border: 1px solid var(--border);
-  color: var(--text-muted);
-  padding: .4rem 1.1rem;
-  border-radius: 2px;
-  font-size: .75rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-family: var(--font-sans);
-  font-weight: 500;
-  transition: all .2s;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface);
 }
-.filter-btn:hover { border-color: var(--gold); color: var(--gold); }
-.filter-btn.active { background: var(--gold); border-color: var(--gold); color: #000; }
 
-/* ── GALLERY GRID ─────────────────────────────────────────────── */
-.gallery-wrap { padding: 2rem; max-width: 1400px; margin: 0 auto; }
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+.pf-project-header {
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
-.gallery-item {
+.pf-project-header::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+.pf-project-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.03em;
+}
+
+/* Photo grid */
+.pf-photos-grid {
+  display: grid;
+  gap: 2px;
+  background: var(--border);
+}
+.pf-photos-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.pf-photos-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.pf-photos-grid.cols-1 { grid-template-columns: 1fr; }
+
+@media(max-width:900px){
+  .pf-photos-grid.cols-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:600px){
+  .pf-photos-grid.cols-3,
+  .pf-photos-grid.cols-2 { grid-template-columns: 1fr; }
+}
+
+/* Photo cell */
+.pf-photo-cell {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 4px;
   background: var(--surface2);
+  display: flex;
+  flex-direction: column;
 }
-.gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-.gallery-item img {
+.pf-photo-cell img {
   width: 100%;
-  height: 100%;
-  min-height: 300px;
+  height: 280px;
   object-fit: cover;
   object-position: center;
   display: block;
-  transition: transform .6s ease;
+  transition: transform 0.6s ease;
 }
-.gallery-item:nth-child(1) img { min-height: 612px; }
-.gallery-item:hover img { transform: scale(1.04); }
-.gallery-overlay {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,.75));
-  padding: 2rem 1rem .85rem;
-  opacity: 0;
-  transition: opacity .3s ease;
+.pf-photo-cell:hover img { transform: scale(1.04); }
+.pf-caption {
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.4px;
+  background: var(--surface);
+  border-top: 1px solid var(--surface2);
+  line-height: 1.4;
+  flex-shrink: 0;
 }
-.gallery-item:hover .gallery-overlay { opacity: 1; }
-.gallery-label {
-  color: #fff;
-  font-size: .75rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-.gallery-item.hidden { display: none; }
 
-@media(max-width:900px){
-  .gallery-grid { grid-template-columns: 1fr 1fr; }
-  .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
-  .gallery-item:nth-child(1) img { min-height: 260px; }
-  .gallery-item img { min-height: 200px; }
-}
 @media(max-width:600px){
-  .gallery-grid { grid-template-columns: 1fr; gap: 8px; }
-  .gallery-item:nth-child(1) { grid-column: span 1; }
-  .gallery-item img { min-height: 220px; }
-  .gallery-wrap { padding: 1rem; }
+  .pf-photo-cell img { height: 200px; }
+  #portfolio-page { padding: 60px 0 90px; }
+}
+@media(max-width:480px){
+  .pf-photo-cell img { height: 160px; }
 }
 
-/* ── MODAL ────────────────────────────────────────────────────── */
-.modal-overlay {
-  display: none; position: fixed; inset: 0;
-  background: rgba(0,0,0,.92); z-index: 1000;
-  align-items: center; justify-content: center;
-  padding: 1rem;
-}
-.modal-overlay.open { display: flex; }
-.modal-inner { position: relative; max-width: 90vw; max-height: 90vh; }
-.modal-inner img { max-width: 100%; max-height: 85vh; object-fit: contain; border-radius: 4px; display: block; }
-.modal-close {
-  position: absolute; top: -2.5rem; right: 0;
-  background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer;
-  font-family: var(--font-sans); line-height: 1;
-}
-.modal-caption {
-  color: var(--text-muted); font-size: .8rem; letter-spacing: .1em;
-  text-transform: uppercase; margin-top: .75rem; text-align: center;
-}
-
-/* ── FOOTER ───────────────────────────────────────────────────── */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 2.5rem 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: space-between;
+/* ─── LIGHTBOX ─────────────────────────────────────── */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.96);
+  z-index: 9999;
+  display: none;
   align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
-.footer-copy { color: var(--text-muted); font-size: .8rem; }
-.footer-contact a { color: var(--gold); text-decoration: none; font-size: .85rem; }
-.footer-contact a:hover { color: var(--gold-light); }
+.lightbox-overlay.open { display: flex; }
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px; right: 28px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  line-height: 1;
+  opacity: .8;
+  transition: opacity .2s;
+}
+.lightbox-close:hover { opacity: 1; }
+.lightbox-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: .5px;
+  white-space: nowrap;
+}
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,.08);
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  width: 48px; height: 64px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 2px;
+  transition: background .2s;
+  -webkit-user-select: none; user-select: none;
+}
+.lightbox-nav:hover { background: rgba(255,255,255,.15); }
+.lightbox-prev { left: 16px; }
+.lightbox-next { right: 16px; }
+@media(max-width:600px){
+  .lightbox-nav { display: none; }
+}
 
-/* ── MOBILE CALL BTN ──────────────────────────────────────────── */
+/* ─── CTA SECTION ──────────────────────────────────── */
+.portfolio-cta {
+  text-align: center;
+  padding: 48px 0 0;
+  border-top: 1px solid var(--border);
+  margin-top: 16px;
+}
+.portfolio-cta p {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gold);
+  color: #000;
+  padding: 16px 32px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background .2s, transform .2s;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+/* ─── FOOTER ───────────────────────────────────────── */
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 60px 0 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-brand .logo-main { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+.footer-brand .logo-sub  { font-size: 9px; text-transform: uppercase; letter-spacing: 3px; color: var(--gold); }
+.footer-brand p { font-size: 13px; color: var(--muted); margin-top: 16px; max-width: 260px; line-height: 1.7; }
+.footer-col h4 { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 16px; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { font-size: 13px; color: var(--muted); padding: 5px 0; }
+.footer-col ul li a:hover { color: var(--gold); }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-bottom p { font-size: 12px; color: var(--muted); }
+@media(max-width:900px){ .footer-grid{grid-template-columns:1fr 1fr;gap:36px;} }
+@media(max-width:600px){ .footer-grid{grid-template-columns:1fr;} }
+
+/* ─── MOBILE CALL BUTTON ───────────────────────────── */
 .mobile-call-btn {
   display: none;
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  z-index: 999;
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 10000;
   background: var(--gold);
   color: #000;
   text-align: center;
   padding: 1rem;
-  font-family: var(--font-sans);
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: .08em;
@@ -223,177 +442,399 @@ footer {
 }
 </style>
 </head>
+
 <body>
 
-<nav>
+<!-- LIGHTBOX -->
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="lightboxNav(-1)">&#8249;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt=""/>
+  <button class="lightbox-nav lightbox-next" onclick="lightboxNav(1)">&#8250;</button>
+  <span class="lightbox-caption" id="lightbox-caption"></span>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
   <a href="index.html" class="nav-logo">
     <span class="logo-main">High Country</span>
     <span class="logo-sub">Finish &amp; Repair CO</span>
   </a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-links">
     <li><a href="index.html#services">Services</a></li>
     <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    <li><a href="index.html#process">Process</a></li>
     <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Get a Quote</a></li>
   </ul>
-  <a href="index.html#contact" class="nav-cta">Get a Quote</a>
+  <div class="nav-toggle" id="nav-toggle" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
 </nav>
 
-<div class="portfolio-hero">
-  <span class="section-label">Our Work</span>
-  <h1>Precision Craft.<br/>Elevated Finish.</h1>
-  <p>Commercial installs across Denver and the Front Range &mdash; from single vehicle graphics to full multi-location sign packages.</p>
-</div>
-
-<div class="filter-bar">
-  <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
-  <button class="filter-btn" onclick="filterGallery('wrap', this)">Vehicle Wraps</button>
-  <button class="filter-btn" onclick="filterGallery('sign', this)">Signs</button>
-  <button class="filter-btn" onclick="filterGallery('window', this)">Windows</button>
-  <button class="filter-btn" onclick="filterGallery('wall', this)">Wall Graphics</button>
-</div>
-
-<div class="gallery-wrap">
-  <div class="gallery-grid" id="gallery">
-
-    <div class="gallery-item" data-cat="wall" onclick="openModal(this)">
-      <img src="images/omeara-room-wrap.jpg" alt="Full room wall wrap - O'Meara Ford / 106.7 KBPI"/>
-      <div class="gallery-overlay"><span class="gallery-label">Full Room Wall Wrap &mdash; O'Meara / 106.7 KBPI</span></div>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="page-hero-eyebrow">
+        <span>Our Work</span>
+      </div>
+      <h1>Portfolio</h1>
+      <p class="page-hero-sub">Every project &mdash; grouped by job</p>
     </div>
-
-    <div class="gallery-item" data-cat="wrap" onclick="openModal(this)">
-      <img src="images/cybertruck-side.jpg" alt="Cybertruck full side graphics - Black Rock HVAC"/>
-      <div class="gallery-overlay"><span class="gallery-label">Cybertruck Full Side Graphics &mdash; Black Rock HVAC</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="wrap" onclick="openModal(this)">
-      <img src="images/iheart-elevator-wrap.jpg" alt="Elevator door wrap - iHeartMedia"/>
-      <div class="gallery-overlay"><span class="gallery-label">Elevator Door Wrap &mdash; iHeartMedia</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/novara-reception.jpg" alt="Dimensional lobby sign - Novara reception"/>
-      <div class="gallery-overlay"><span class="gallery-label">Dimensional Lobby Sign &mdash; Novara</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/kpa-lobby-sign.jpg" alt="Dimensional lobby sign - KPA"/>
-      <div class="gallery-overlay"><span class="gallery-label">Dimensional Lobby Sign &mdash; KPA</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="wall" onclick="openModal(this)">
-      <img src="images/gque-bbq-mural.jpg" alt="Restaurant wall mural - GQue Championship BBQ"/>
-      <div class="gallery-overlay"><span class="gallery-label">Wall Mural &mdash; GQue Championship BBQ</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/westbound-building-sign.jpg" alt="Building sign - Westbound and Down Brewing"/>
-      <div class="gallery-overlay"><span class="gallery-label">Building Sign &mdash; Westbound &amp; Down Brewing</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/childrens-museum-donor.jpg" alt="Donor recognition wall - Children's Museum of Denver"/>
-      <div class="gallery-overlay"><span class="gallery-label">Donor Wall &mdash; Children's Museum of Denver</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/buffalo-building-sign.jpg" alt="Exterior building sign - The Buffalo"/>
-      <div class="gallery-overlay"><span class="gallery-label">Building Sign &mdash; The Buffalo</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="wrap" onclick="openModal(this)">
-      <img src="images/cybertruck-rear.jpg" alt="Cybertruck rear spot graphics - Black Rock HVAC"/>
-      <div class="gallery-overlay"><span class="gallery-label">Cybertruck Spot Graphics &mdash; Black Rock HVAC</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="wrap" onclick="openModal(this)">
-      <img src="images/cybertruck-front.jpg" alt="Cybertruck front graphics - Black Rock HVAC"/>
-      <div class="gallery-overlay"><span class="gallery-label">Cybertruck Front Graphics &mdash; Black Rock HVAC</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/sea-lobby-sign.jpg" alt="Dimensional lobby sign - S-E-A"/>
-      <div class="gallery-overlay"><span class="gallery-label">Dimensional Lobby Sign &mdash; S-E-A</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/sea-lobby-wide.jpg" alt="Lobby wide shot - S-E-A"/>
-      <div class="gallery-overlay"><span class="gallery-label">Lobby Install &mdash; S-E-A</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="wall" onclick="openModal(this)">
-      <img src="images/gym-wall-mural.jpg" alt="Gym wall mural"/>
-      <div class="gallery-overlay"><span class="gallery-label">Wall Mural &mdash; Fitness Center</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="wall" onclick="openModal(this)">
-      <img src="images/omeara-room-wrap-wide.jpg" alt="Room wrap panoramic - broadcast studio"/>
-      <div class="gallery-overlay"><span class="gallery-label">Room Wrap Panoramic &mdash; Broadcast Studio</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="window" onclick="openModal(this)">
-      <img src="images/novara-frosted-glass.jpg" alt="Frosted glass partition - Novara"/>
-      <div class="gallery-overlay"><span class="gallery-label">Frosted Glass Partition &mdash; Novara</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/childrens-museum-artstudio.jpg" alt="Dimensional sign - Children's Museum Art Studio"/>
-      <div class="gallery-overlay"><span class="gallery-label">Dimensional Sign &mdash; Children's Museum</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/dog-pony-exterior.jpg" alt="Exterior wall sign - Dog and Pony Grill"/>
-      <div class="gallery-overlay"><span class="gallery-label">Exterior Wall Sign &mdash; Dog &amp; Pony Grill</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/novara-waiting-area.jpg" alt="Lobby sign waiting area - Novara"/>
-      <div class="gallery-overlay"><span class="gallery-label">Lobby Sign &mdash; Novara Waiting Area</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/kpa-lobby-sign2.jpg" alt="KPA lobby sign detail"/>
-      <div class="gallery-overlay"><span class="gallery-label">Lobby Sign Detail &mdash; KPA</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/childrens-museum-donor2.jpg" alt="Donor wall detail - Children's Museum"/>
-      <div class="gallery-overlay"><span class="gallery-label">Donor Wall Detail &mdash; Children's Museum</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/novara-lobby.jpg" alt="Lobby overview - Novara"/>
-      <div class="gallery-overlay"><span class="gallery-label">Lobby Overview &mdash; Novara</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/office-directory.jpg" alt="Office directory sign"/>
-      <div class="gallery-overlay"><span class="gallery-label">Office Directory Sign</span></div>
-    </div>
-
-    <div class="gallery-item" data-cat="sign" onclick="openModal(this)">
-      <img src="images/directory-sign.jpg" alt="Directory sign install"/>
-      <div class="gallery-overlay"><span class="gallery-label">Directory Sign Install</span></div>
-    </div>
-
   </div>
 </div>
 
-<!-- Lightbox modal -->
-<div class="modal-overlay" id="modal" onclick="closeModal(event)">
-  <div class="modal-inner">
-    <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">&times;</button>
-    <img id="modal-img" src="" alt=""/>
-    <div class="modal-caption" id="modal-caption"></div>
-  </div>
-</div>
+<!-- PORTFOLIO GRID -->
+<section id="portfolio-page">
+  <div class="container">
 
+    <!-- 1. PEAK Elevator Performance Group -->
+    <div class="pf-project" data-project="0">
+      <div class="pf-project-header">
+        <span class="pf-project-name">PEAK Elevator Performance Group</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/peak-elevator-lobby-sign.jpg" alt="Lobby Acrylic Sign — PEAK Elevator Performance Group" loading="lazy"/>
+          <div class="pf-caption">Lobby Acrylic Sign</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Novara -->
+    <div class="pf-project" data-project="1">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Novara</span>
+      </div>
+      <div class="pf-photos-grid cols-3">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/novara-frosted-glass.jpg" alt="Reception &amp; Frosted Glass Panel — Novara" loading="lazy"/>
+          <div class="pf-caption">Reception &amp; Frosted Glass Panel</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/novara-lobby.jpg" alt="Lobby Wall Lettering — Novara" loading="lazy"/>
+          <div class="pf-caption">Lobby Wall Lettering</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/novara-reception.jpg" alt="Reception Desk Signage — Novara" loading="lazy"/>
+          <div class="pf-caption">Reception Desk Signage</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. O'Meara Ford / KBPI -->
+    <div class="pf-project" data-project="2">
+      <div class="pf-project-header">
+        <span class="pf-project-name">O&rsquo;Meara Ford / KBPI</span>
+      </div>
+      <div class="pf-photos-grid cols-2">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/omeara-room-wrap.jpg" alt="Full Room Wrap — Wall &amp; Ceiling — O'Meara Ford / KBPI" loading="lazy"/>
+          <div class="pf-caption">Full Room Wrap &mdash; Wall &amp; Ceiling</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/omeara-room-wrap-wide.jpg" alt="Room Wrap — Wide View — O'Meara Ford / KBPI" loading="lazy"/>
+          <div class="pf-caption">Room Wrap &mdash; Wide View</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Elite Brands -->
+    <div class="pf-project" data-project="3">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Elite Brands</span>
+      </div>
+      <div class="pf-photos-grid cols-3">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/elite-brands-wall-mural.jpg" alt="Office Wall Mural — Core Values — Elite Brands" loading="lazy"/>
+          <div class="pf-caption">Office Wall Mural &mdash; Core Values</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/elite-brands-mural-wide2.jpg" alt="Wall Mural — Full Width View — Elite Brands" loading="lazy"/>
+          <div class="pf-caption">Wall Mural &mdash; Full Width View</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/elite-brands-sign-detail.jpg" alt="Lobby Sign Detail — Elite Brands" loading="lazy"/>
+          <div class="pf-caption">Lobby Sign Detail</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Cybertruck — Black Rock -->
+    <div class="pf-project" data-project="4">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Cybertruck &mdash; Black Rock</span>
+      </div>
+      <div class="pf-photos-grid cols-3">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/cybertruck-side.jpg" alt="Vinyl Lettering — Side — Cybertruck Black Rock" loading="lazy"/>
+          <div class="pf-caption">Vinyl Lettering &mdash; Side</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/cybertruck-front.jpg" alt="Vinyl Lettering — Front — Cybertruck Black Rock" loading="lazy"/>
+          <div class="pf-caption">Vinyl Lettering &mdash; Front</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/cybertruck-rear.jpg" alt="Vinyl Lettering — Rear — Cybertruck Black Rock" loading="lazy"/>
+          <div class="pf-caption">Vinyl Lettering &mdash; Rear</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. The Buffalo Restaurant & Bar -->
+    <div class="pf-project" data-project="5">
+      <div class="pf-project-header">
+        <span class="pf-project-name">The Buffalo Restaurant &amp; Bar</span>
+      </div>
+      <div class="pf-photos-grid cols-2">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/buffalo-restaurant-exterior.jpg" alt="Exterior Storefront Signage — The Buffalo Restaurant &amp; Bar" loading="lazy"/>
+          <div class="pf-caption">Exterior Storefront Signage</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/buffalo-building-sign.jpg" alt="Building Sign — The Buffalo Restaurant &amp; Bar" loading="lazy"/>
+          <div class="pf-caption">Building Sign</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. iHeartMedia -->
+    <div class="pf-project" data-project="6">
+      <div class="pf-project-header">
+        <span class="pf-project-name">iHeartMedia</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/iheart-elevator-wrap.jpg" alt="Elevator Wrap Installation — iHeartMedia" loading="lazy"/>
+          <div class="pf-caption">Elevator Wrap Installation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Children's Museum of Denver -->
+    <div class="pf-project" data-project="7">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Children&rsquo;s Museum of Denver</span>
+      </div>
+      <div class="pf-photos-grid cols-3">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/childrens-museum-artstudio.jpg" alt="Art Studio — Dimensional Letters — Children's Museum of Denver" loading="lazy"/>
+          <div class="pf-caption">Art Studio &mdash; Dimensional Letters</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/childrens-museum-donor.jpg" alt="Donor Recognition Wall — Children's Museum of Denver" loading="lazy"/>
+          <div class="pf-caption">Donor Recognition Wall</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/childrens-museum-donor2.jpg" alt="Donor Wall — Detail — Children's Museum of Denver" loading="lazy"/>
+          <div class="pf-caption">Donor Wall &mdash; Detail</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. 95.7 The Party -->
+    <div class="pf-project" data-project="8">
+      <div class="pf-project-header">
+        <span class="pf-project-name">95.7 The Party</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/957-party-vehicle-wrap.jpg" alt="Full Vehicle Wrap — SUV — 95.7 The Party" loading="lazy"/>
+          <div class="pf-caption">Full Vehicle Wrap &mdash; SUV</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Glover Masonry -->
+    <div class="pf-project" data-project="9">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Glover Masonry</span>
+      </div>
+      <div class="pf-photos-grid cols-2">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/glover-masonry-lobby.jpg" alt="Lobby Acrylic Sign — Glover Masonry" loading="lazy"/>
+          <div class="pf-caption">Lobby Acrylic Sign</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/glover-masonry-sign-closeup.jpg" alt="Lobby Sign — Detail — Glover Masonry" loading="lazy"/>
+          <div class="pf-caption">Lobby Sign &mdash; Detail</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. GQue BBQ -->
+    <div class="pf-project" data-project="10">
+      <div class="pf-project-header">
+        <span class="pf-project-name">GQue BBQ</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/gque-bbq-mural.jpg" alt="Large Format Wall Mural — GQue BBQ" loading="lazy"/>
+          <div class="pf-caption">Large Format Wall Mural</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Gym Wall Mural -->
+    <div class="pf-project" data-project="11">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Gym Wall Mural</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/gym-wall-mural.jpg" alt="Large Format Wall Mural — Gym" loading="lazy"/>
+          <div class="pf-caption">Large Format Wall Mural</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13. Trinity Place — 1801 Broadway Denver -->
+    <div class="pf-project" data-project="12">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Trinity Place &mdash; 1801 Broadway Denver</span>
+      </div>
+      <div class="pf-photos-grid cols-2">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/trinity-place-exterior-sign.jpg" alt="Exterior Building Sign — Trinity Place 1801 Broadway Denver" loading="lazy"/>
+          <div class="pf-caption">Exterior Building Sign</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/trinity-place-exterior-sign2.jpg" alt="Exterior Signage — Second Angle — Trinity Place 1801 Broadway Denver" loading="lazy"/>
+          <div class="pf-caption">Exterior Signage &mdash; Second Angle</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14. KPA -->
+    <div class="pf-project" data-project="13">
+      <div class="pf-project-header">
+        <span class="pf-project-name">KPA</span>
+      </div>
+      <div class="pf-photos-grid cols-2">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/kpa-lobby-sign.jpg" alt="Lobby Sign Installation — KPA" loading="lazy"/>
+          <div class="pf-caption">Lobby Sign Installation</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/kpa-lobby-sign2.jpg" alt="Lobby Sign — Alternate View — KPA" loading="lazy"/>
+          <div class="pf-caption">Lobby Sign &mdash; Alternate View</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15. Westbound & Down Brewing -->
+    <div class="pf-project" data-project="14">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Westbound &amp; Down Brewing</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/westbound-building-sign.jpg" alt="Exterior Building Sign — Westbound &amp; Down Brewing" loading="lazy"/>
+          <div class="pf-caption">Exterior Building Sign</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 16. SEA -->
+    <div class="pf-project" data-project="15">
+      <div class="pf-project-header">
+        <span class="pf-project-name">SEA</span>
+      </div>
+      <div class="pf-photos-grid cols-2">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/sea-lobby-wide.jpg" alt="Lobby Graphics — Wide — SEA" loading="lazy"/>
+          <div class="pf-caption">Lobby Graphics &mdash; Wide</div>
+        </div>
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/sea-lobby-sign.jpg" alt="Lobby Sign — SEA" loading="lazy"/>
+          <div class="pf-caption">Lobby Sign</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 17. Dog & Pony -->
+    <div class="pf-project" data-project="16">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Dog &amp; Pony</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/dog-pony-exterior.jpg" alt="Exterior Sign Installation — Dog &amp; Pony" loading="lazy"/>
+          <div class="pf-caption">Exterior Sign Installation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 18. Office Directory -->
+    <div class="pf-project" data-project="17">
+      <div class="pf-project-header">
+        <span class="pf-project-name">Office Directory</span>
+      </div>
+      <div class="pf-photos-grid cols-1">
+        <div class="pf-photo-cell" onclick="openLightbox(this)">
+          <img src="images/office-directory.jpg" alt="Directory Board Installation — Office Directory" loading="lazy"/>
+          <div class="pf-caption">Directory Board Installation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="portfolio-cta">
+      <p>Ready to see your project here? Let&rsquo;s talk.</p>
+      <a href="index.html#contact" class="btn-primary">
+        Get a Free Quote
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <div class="footer-copy">&copy; 2026 High Country Finish &amp; Repair CO. Denver, CO.</div>
-  <div class="footer-contact">
-    <a href="tel:3038824656">303-882-4656</a>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="mailto:highcountryfinishandrepairco@gmail.com">highcountryfinishandrepairco@gmail.com</a>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-main">High Country</div>
+        <div class="logo-sub">Finish &amp; Repair CO</div>
+        <p>Denver's premier vinyl wrap, sign, and window tint specialists. Precision installs, every time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Vehicle Wraps</a></li>
+          <li><a href="index.html#services">Spot Graphics</a></li>
+          <li><a href="index.html#services">Window Tint</a></li>
+          <li><a href="index.html#services">Window Frosting</a></li>
+          <li><a href="index.html#services">Wall Graphics</a></li>
+          <li><a href="index.html#services">Lobby Signs</a></li>
+          <li><a href="index.html#services">Building Signs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html#process">Our Process</a></li>
+          <li><a href="index.html#service-area">Service Area</a></li>
+          <li><a href="index.html#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:3038824656">303-882-4656</a></li>
+          <li><a href="mailto:highcountryfinishandrepairco@gmail.com" style="word-break:break-word;font-size:12px">highcountryfinishandrepairco<br/>@gmail.com</a></li>
+          <li style="margin-top:8px">Denver, CO &amp; Surrounding Areas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 High Country Finish and Repair CO. All rights reserved.</p>
+      <p>Denver, CO &middot; 303-882-4656</p>
+    </div>
   </div>
 </footer>
 
@@ -404,36 +845,68 @@ footer {
 </a>
 
 <script>
-function filterGallery(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.gallery-item').forEach(item => {
-    if (cat === 'all' || item.dataset.cat === cat) {
-      item.classList.remove('hidden');
-    } else {
-      item.classList.add('hidden');
-    }
-  });
+// ── Nav scroll ──────────────────────────────────────────────
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ── Mobile nav ──────────────────────────────────────────────
+function toggleNav() {
+  document.getElementById('nav-links').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'));
+});
+
+// ── Lightbox ────────────────────────────────────────────────
+let allCells = [];
+let currentIdx = 0;
+
+function buildCellList() {
+  allCells = Array.from(document.querySelectorAll('.pf-photo-cell'));
 }
 
-function openModal(el) {
-  const img = el.querySelector('img');
-  const label = el.querySelector('.gallery-label');
-  document.getElementById('modal-img').src = img.src;
-  document.getElementById('modal-img').alt = img.alt;
-  document.getElementById('modal-caption').textContent = label ? label.textContent : '';
-  document.getElementById('modal').classList.add('open');
+function openLightbox(cell) {
+  buildCellList();
+  currentIdx = allCells.indexOf(cell);
+  showLightboxAt(currentIdx);
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
 
-function closeModal(e) {
-  if (e.target === document.getElementById('modal')) {
-    document.getElementById('modal').classList.remove('open');
+function showLightboxAt(idx) {
+  const cell = allCells[idx];
+  const img = cell.querySelector('img');
+  const caption = cell.querySelector('.pf-caption');
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox-img').alt = img.alt;
+  document.getElementById('lightbox-caption').textContent = caption ? caption.textContent : '';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function lightboxNav(dir) {
+  currentIdx = (currentIdx + dir + allCells.length) % allCells.length;
+  showLightboxAt(currentIdx);
+}
+
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this || e.target === document.getElementById('lightbox-img')) {
+    if (e.target === this) closeLightbox();
   }
-}
+});
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft')  lightboxNav(-1);
+  if (e.key === 'ArrowRight') lightboxNav(1);
 });
 </script>
+
 </body>
 </html>
