@@ -2054,97 +2054,74 @@ footer {
 
 <!-- PORTFOLIO -->
 <style>
-/* ── Gallery Groups ─────────────────────────────────────────────────── */
-.gallery-group { margin-bottom: 56px; }
-.gallery-group:last-child { margin-bottom: 0; }
-.gallery-group-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--gold);
-  letter-spacing: 0.03em;
-  margin-bottom: 18px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(201,168,76,.25);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.gallery-group-title::before {
-  content: '';
-  display: inline-block;
-  width: 28px;
-  height: 2px;
-  background: var(--gold);
-  flex-shrink: 0;
-}
-.group-grid {
+/* ── Hero gallery grid (5-photo) ─────────────────────────────────── */
+.hero-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
+  margin-bottom: 2.5rem;
 }
-.group-grid.cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 820px;
+@media(max-width: 1100px) {
+  .hero-gallery-grid { grid-template-columns: repeat(3, 1fr); }
 }
-.group-grid.cols-1 {
-  grid-template-columns: 1fr;
-  max-width: 520px;
+@media(max-width: 768px) {
+  .hero-gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
-@media(max-width: 900px) {
-  .group-grid,
-  .group-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+@media(max-width: 480px) {
+  .hero-gallery-grid { grid-template-columns: 1fr; }
 }
-@media(max-width: 600px) {
-  .group-grid,
-  .group-grid.cols-2 { grid-template-columns: 1fr; max-width: 100%; }
-}
-.group-item {
+.hero-gallery-item {
   position: relative;
   overflow: hidden;
   cursor: pointer;
   border-radius: 4px;
   background: var(--surface2);
 }
-.group-item img {
+.hero-gallery-item img {
   width: 100%;
   height: 260px;
   object-fit: cover;
   object-position: center;
   display: block;
-  transition: transform .6s ease;
+  transition: transform 0.6s ease;
 }
-.group-item:hover img { transform: scale(1.04); }
-.group-item-overlay {
+.hero-gallery-item:hover img { transform: scale(1.04); }
+.hero-gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,.82) 0%, transparent 55%);
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, transparent 55%);
   opacity: 0;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
   display: flex;
   align-items: flex-end;
   padding: 16px;
 }
-.group-item:hover .group-item-overlay { opacity: 1; }
-.group-item-caption {
+.hero-gallery-item:hover .hero-gallery-overlay { opacity: 1; }
+.hero-gallery-caption {
   font-size: 13px;
   font-weight: 500;
   color: #fff;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   line-height: 1.4;
 }
-
-/* ── Gallery coming-soon placeholder (scoped) ─────────────────────── */
-.gallery-coming-soon {
-  padding: 48px 24px;
-  border: 1px dashed rgba(201,168,76,.25);
-  border-radius: 4px;
-  color: #888880;
-  font-size: 14px;
-  font-style: italic;
-  letter-spacing: 0.3px;
-  text-align: center;
-  background: rgba(28,28,28,.5);
+/* View Full Portfolio button */
+.btn-portfolio {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: var(--black);
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+.btn-portfolio:hover {
+  background: var(--gold);
+  color: #000;
 }
 </style>
 
@@ -2157,198 +2134,57 @@ footer {
       <p class="reveal" style="color:var(--muted);max-width:540px;margin:0 auto 2rem;">A sample of our recent commercial installs across Denver and the Front Range.</p>
     </div>
 
-    <!-- Group 1: Vehicle Wraps -->
-    <div class="gallery-group reveal">
-      <div class="gallery-group-title">Vehicle Wraps</div>
-      <div class="group-grid">
+    <div class="hero-gallery-grid reveal">
 
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/cybertruck-side.jpg"
-               alt="Cybertruck commercial vehicle graphics Denver — Black Rock Vinyl lettering and body wrap"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Cybertruck — Black Rock Vinyl Lettering</span>
-          </div>
+      <div class="hero-gallery-item" onclick="openGroupModal(this)">
+        <img src="images/peak-elevator-lobby-sign.jpg"
+             alt="lobby sign installation Denver - PEAK Elevator Performance Group acrylic panel"
+             loading="lazy"/>
+        <div class="hero-gallery-overlay">
+          <span class="hero-gallery-caption">PEAK Elevator Performance Group</span>
         </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/cybertruck-front.jpg"
-               alt="Cybertruck vehicle wrap installation - Black Rock vinyl lettering front view Denver"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Cybertruck — Black Rock Front</span>
-          </div>
-        </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/957-party-vehicle-wrap.jpg"
-               alt="Full vehicle wrap Denver CO — 95.7 The Party radio station SUV branded wrap"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">95.7 The Party — Full Vehicle Wrap</span>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <!-- Group 2: Lobby & Office Signs -->
-    <div class="gallery-group reveal">
-      <div class="gallery-group-title">Lobby &amp; Office Signs</div>
-      <div class="group-grid">
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/peak-elevator-lobby-sign.jpg"
-               alt="PEAK Elevator Performance Group lobby sign installation Denver — large dimensional acrylic panel"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">PEAK Elevator Performance Group</span>
-          </div>
+      <div class="hero-gallery-item" onclick="openGroupModal(this)">
+        <img src="images/novara-frosted-glass.jpg"
+             alt="office reception signage and frosted glass installation Denver - Novara"
+             loading="lazy"/>
+        <div class="hero-gallery-overlay">
+          <span class="hero-gallery-caption">Novara &#8212; Reception &amp; Frosted Glass</span>
         </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/novara-frosted-glass.jpg"
-               alt="Novara office reception sign and frosted glass installation Denver"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Novara — Reception &amp; Frosted Glass</span>
-          </div>
-        </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/kpa-lobby-sign.jpg"
-               alt="KPA lobby sign installation Denver — branded reception area signage"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">KPA Lobby Sign</span>
-          </div>
-        </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/glover-masonry-lobby.jpg"
-               alt="Glover Masonry lobby acrylic sign installation Denver — wide angle reception sign"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Glover Masonry — Lobby Sign</span>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <!-- Group 3: Wall Murals & Graphics -->
-    <div class="gallery-group reveal">
-      <div class="gallery-group-title">Wall Murals &amp; Graphics</div>
-      <div class="group-grid">
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/omeara-room-wrap.jpg"
-               alt="O'Meara Ford and 106.7 KBPI full room wall wrap installation Denver — branded interior mural"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">O&#8217;Meara Ford / KBPI — Full Room Wrap</span>
-          </div>
+      <div class="hero-gallery-item" onclick="openGroupModal(this)">
+        <img src="images/omeara-room-wrap.jpg"
+             alt="full room wrap installation Denver - vinyl wall and ceiling graphics"
+             loading="lazy"/>
+        <div class="hero-gallery-overlay">
+          <span class="hero-gallery-caption">O&#8217;Meara Ford / KBPI &#8212; Full Room Wrap</span>
         </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/elite-brands-wall-mural.jpg"
-               alt="Elite Brands office wall mural installation Denver — large format branded graphics with core values"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Elite Brands — Office Wall Mural</span>
-          </div>
-        </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/gque-bbq-mural.jpg"
-               alt="GQue BBQ large format wall mural installation Denver — restaurant interior branded graphics"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">GQue BBQ — Large Format Wall Mural</span>
-          </div>
-        </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/gym-wall-mural.jpg"
-               alt="large format wall mural installation Denver - commercial gym vinyl graphics"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Commercial Gym — Large Format Wall Mural</span>
-          </div>
-        </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/childrens-museum-artstudio.jpg"
-               alt="dimensional letter installation Denver - Children's Museum art studio wall graphics"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Children's Museum — Art Studio Dimensional Letters</span>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <!-- Group 4: Custom & Specialty Installs -->
-    <div class="gallery-group reveal">
-      <div class="gallery-group-title">Custom &amp; Specialty Installs</div>
-      <div class="group-grid cols-1">
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/iheart-elevator-wrap.jpg"
-               alt="iHeartMedia elevator wrap installation Denver — commercial vinyl elevator door graphics"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">iHeartMedia — Custom Elevator Door Wrap</span>
-          </div>
+      <div class="hero-gallery-item" onclick="openGroupModal(this)">
+        <img src="images/buffalo-restaurant-exterior.jpg"
+             alt="exterior storefront sign installation Front Range Colorado - The Buffalo Restaurant"
+             loading="lazy"/>
+        <div class="hero-gallery-overlay">
+          <span class="hero-gallery-caption">The Buffalo Restaurant &amp; Bar</span>
         </div>
-
       </div>
-    </div>
 
-
-    <!-- Group 4b: Window Film & Frosting -->
-    <div class="gallery-group reveal">
-      <div class="gallery-group-title">Window Film &amp; Frosting</div>
-      <div class="gallery-coming-soon">Portfolio photos coming soon</div>
-    </div>
-    <!-- Group 5: Exterior Signage -->
-    <div class="gallery-group reveal">
-      <div class="gallery-group-title">Exterior Signage</div>
-      <div class="group-grid">
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/buffalo-restaurant-exterior.jpg"
-               alt="The Buffalo Restaurant and Bar exterior storefront signage installation Front Range Colorado"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">The Buffalo Restaurant &amp; Bar</span>
-          </div>
+      <div class="hero-gallery-item" onclick="openGroupModal(this)">
+        <img src="images/cybertruck-side.jpg"
+             alt="vehicle wrap installation Denver - Cybertruck Black Rock vinyl lettering side view"
+             loading="lazy"/>
+        <div class="hero-gallery-overlay">
+          <span class="hero-gallery-caption">Cybertruck &#8212; Black Rock Vinyl Lettering</span>
         </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/trinity-place-exterior-sign.jpg"
-               alt="Trinity Place 1801 Broadway Denver exterior building sign installation — commercial signage"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Trinity Place — 1801 Broadway Denver</span>
-          </div>
-        </div>
-
-        <div class="group-item" onclick="openGroupModal(this)">
-          <img src="images/westbound-building-sign.jpg"
-               alt="Westbound and Down Brewing exterior building sign installation Colorado — commercial brewery signage"
-               loading="lazy"/>
-          <div class="group-item-overlay">
-            <span class="group-item-caption">Westbound &amp; Down Brewing</span>
-          </div>
-        </div>
-
       </div>
+
     </div>
 
-    <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-      <a href="portfolio.html" class="btn-primary">View Full Portfolio &rarr;</a>
+    <div style="text-align:center;" class="reveal">
+      <a href="#portfolio-full" class="btn-portfolio">View Full Portfolio</a>
     </div>
 
   </div>
@@ -2559,12 +2395,9 @@ function openGroupModal(item) {
 }
 </style>
 
+<hr style="border:none;border-top:1px solid var(--gold);opacity:0.35;margin:0;" aria-hidden="true"/>
 <section id="portfolio-full">
   <div class="container">
-
-    <div class="pf-section-header reveal">
-      <span class="pf-section-label">Full Portfolio</span>
-      <div class="pf-gold-line"></div>
       <h2 class="pf-section-title">Every Project, Organized by Job</h2>
       <p class="pf-section-sub">Every commercial install we&rsquo;ve documented — grouped by client and ordered by impact.</p>
     </div>
