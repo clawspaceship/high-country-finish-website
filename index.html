@@ -1,1392 +1,2784 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>High Country Finish and Repair CO | Denver Vinyl Wraps, Signs & Window Tint</title>
-<meta name="description" content="Denver's premier vinyl wrap, sign, and window tint specialists. Vehicle wraps, spot graphics, lobby signs, building signs, wall graphics, and commercial window frosting. Serving Denver and surrounding areas."/>
-<meta name="keywords" content="vinyl wrap Denver, vehicle wrap Denver, car wrap Colorado, window tint Denver, frosted glass Denver, lobby signs Denver, building signs Colorado, wall graphics — sign company Denver, High Country Finish"/>
-<meta property="og:title" content="High Country Finish and Repair CO | Denver Vinyl & Sign Specialists"/>
-<meta property="og:description" content="Premium vinyl wraps, signs, and window tint serving Denver and the Front Range."/>
-<meta property="og:type" content="website"/>
-<meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://highcountryfinishandrepairco.com/"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<style>
-/* â”€â”€â”€ RESET & BASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  background: #0c0c0c;
-  color: #f0ece4;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-
-/* â”€â”€â”€ VARIABLES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-:root {
-  --gold:       #C9A84C;
-  --gold-light: #E8C97D;
-  --gold-dark:  #9B7A2B;
-  --black:      #0c0c0c;
-  --surface:    #141414;
-  --surface2:   #1c1c1c;
-  --border:     #2a2a2a;
-  --text:       #f0ece4;
-  --muted:      #888880;
-  --white:      #ffffff;
-}
-
-/* â”€â”€â”€ TYPOGRAPHY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-}
-.section-label {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--gold);
-  margin-bottom: 16px;
-  display: block;
-}
-.section-title {
-  font-size: clamp(32px, 5vw, 52px);
-  color: var(--text);
-  margin-bottom: 20px;
-}
-.section-body {
-  font-size: 16px;
-  color: var(--muted);
-  max-width: 580px;
-  line-height: 1.75;
-}
-
-/* â”€â”€â”€ LAYOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-.container {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-section { padding: 100px 0; }
-@media(max-width:768px){ section{padding:70px 0;} .container{padding:0 24px;} }
-
-/* â”€â”€â”€ GOLD LINE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-.gold-line {
-  width: 48px;
-  height: 2px;
-  background: var(--gold);
-  margin-bottom: 24px;
-}
-
-/* â”€â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1000;
-  padding: 24px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background .3s, padding .3s, border-color .3s;
-  border-bottom: 1px solid transparent;
-}
-nav.scrolled {
-  background: rgba(12,12,12,.97);
-  backdrop-filter: blur(12px);
-  padding: 16px 40px;
-  border-color: var(--border);
-}
-.nav-logo {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-.nav-logo .logo-main {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text);
-  letter-spacing: 0.5px;
-}
-.nav-logo .logo-sub {
-  font-size: 9px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--gold);
-  margin-top: 3px;
-}
-.nav-links {
-  display: flex;
-  gap: 36px;
-  list-style: none;
-  align-items: center;
-}
-.nav-links a {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: .5px;
-  color: #aaa;
-  transition: color .2s;
-}
-.nav-links a:hover { color: var(--text); }
-.nav-cta {
-  background: var(--gold);
-  color: #000 !important;
-  padding: 10px 22px;
-  border-radius: 2px;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: background .2s !important;
-}
-.nav-cta:hover { background: var(--gold-light) !important; }
-.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
-.nav-toggle span { width: 24px; height: 1.5px; background: var(--text); transition: all .3s; }
-@media(max-width:900px){
-  nav{padding:20px 24px;}
-  nav.scrolled{padding:14px 24px;}
-  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(12,12,12,.98);
-    flex-direction:column;justify-content:center;gap:32px;z-index:999;}
-  .nav-links.open{display:flex;}
-  .nav-links a{font-size:18px!important;}
-  .nav-toggle{display:flex;z-index:1000;}
-}
-
-/* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-#hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-}
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(135deg, rgba(12,12,12,.95) 0%, rgba(12,12,12,.7) 60%, rgba(12,12,12,.85) 100%),
-    radial-gradient(ellipse at 70% 50%, rgba(201,168,76,.08) 0%, transparent 60%);
-  z-index: 1;
-}
-.hero-bg-img {
-  position: absolute;
-  inset: 0;
-  background: url('images/hero.jpg') center/cover no-repeat;
-  z-index: 0;
-}
-/* Fallback gradient if no hero image */
-.hero-bg-img:not([style*="background-image"]),
-.hero-bg-img[style=""] {
-  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 40%, #141414 100%);
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-.hero-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 28px;
-}
-.hero-eyebrow span {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-}
-.hero-eyebrow::before {
-  content: '';
-  width: 32px;
-  height: 1px;
-  background: var(--gold);
-}
-h1.hero-title {
-  font-size: clamp(44px, 7vw, 86px);
-  font-weight: 600;
-  line-height: 1.05;
-  margin-bottom: 28px;
-  color: var(--text);
-}
-h1.hero-title em {
-  font-style: italic;
-  color: var(--gold);
-}
-.hero-sub {
-  font-size: 17px;
-  color: var(--muted);
-  max-width: 520px;
-  margin-bottom: 48px;
-  line-height: 1.75;
-  font-weight: 300;
-}
-.hero-actions {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--gold);
-  color: #000;
-  padding: 16px 32px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 2px;
-  transition: background .2s, transform .2s;
-}
-.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
-.btn-outline {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid rgba(255,255,255,.2);
-  color: var(--text);
-  padding: 16px 32px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: .5px;
-  border-radius: 2px;
-  transition: border-color .2s, transform .2s;
-}
-.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
-.hero-stats {
-  position: absolute;
-  bottom: 48px;
-  z-index: 2;
-  display: flex;
-  gap: 56px;
-}
-.hero-stat .hs-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--gold);
-  line-height: 1;
-}
-.hero-stat .hs-label {
-  font-size: 11px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-top: 4px;
-}
-@media(max-width:600px){
-  .hero-stats{gap:32px;bottom:32px;}
-  .hero-stat .hs-num{font-size:28px;}
-}
-
-/* â”€â”€â”€ SERVICES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-#services { background: var(--surface); }
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2px;
-  margin-top: 60px;
-  border: 2px solid var(--border);
-}
-.service-card {
-  background: var(--surface);
-  padding: 40px 36px;
-  border-right: 2px solid var(--border);
-  border-bottom: 2px solid var(--border);
-  transition: background .3s;
-  position: relative;
-  overflow: hidden;
-}
-.service-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--gold);
-  transform: scaleX(0);
-  transition: transform .3s;
-  transform-origin: left;
-}
-.service-card:hover { background: #1a1a1a; }
-.service-card:hover::after { transform: scaleX(1); }
-.service-icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 24px;
-  color: var(--gold);
-}
-.service-card h3 {
-  font-size: 22px;
-  margin-bottom: 14px;
-  color: var(--text);
-}
-.service-card p {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.7;
-}
-.service-card ul {
-  list-style: none;
-  margin-top: 16px;
-}
-.service-card ul li {
-  font-size: 13px;
-  color: var(--muted);
-  padding: 4px 0;
-  border-top: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.service-card ul li::before {
-  content: '';
-  width: 4px;
-  height: 4px;
-  background: var(--gold);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-/* â”€â”€â”€ GALLERY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-#portfolio { background: var(--black); }
-.portfolio-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 48px;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-.gallery-filter {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.filter-btn {
-  padding: 8px 18px;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .5px;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: all .2s;
-  font-family: 'Inter', sans-serif;
-}
-.filter-btn:hover, .filter-btn.active {
-  border-color: var(--gold);
-  color: var(--gold);
-  background: rgba(201,168,76,.06);
-}
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  background: var(--surface2);
-  border-radius: 4px;
-}
-/* First item spans 2 columns and 2 rows for visual impact */
-.gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-.gallery-item:nth-child(1) .gallery-img { min-height: 520px; }
-@media(max-width:900px){
-  .gallery-grid{grid-template-columns:1fr 1fr;}
-  .gallery-item{grid-column:span 1!important;grid-row:span 1!important;}
-}
-@media(max-width:600px){
-  .gallery-grid{grid-template-columns:1fr;}
-}
-.gallery-img {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-  max-height: 360px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transition: transform .6s ease;
-}
-.gallery-item:hover .gallery-img { transform: scale(1.04); }
-.gallery-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,.8) 0%, transparent 60%);
-  opacity: 0;
-  transition: opacity .3s;
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-}
-.gallery-item:hover .gallery-overlay { opacity: 1; }
-.gallery-label {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text);
-  letter-spacing: .5px;
-}
-/* Placeholder gallery items */
-.gallery-placeholder {
-  min-height: 240px;
-  background: var(--surface2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: var(--muted);
-  font-size: 13px;
-  border: 1px dashed var(--border);
-}
-.gallery-placeholder svg { opacity: .3; }
-
-/* â”€â”€â”€ PROCESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-#process { background: var(--surface); }
-.process-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0;
-  margin-top: 60px;
-  position: relative;
-}
-.process-steps::before {
-  content: '';
-  position: absolute;
-  top: 32px; left: 32px; right: 32px;
-  height: 1px;
-  background: var(--border);
-}
-.process-step {
-  padding: 0 32px 0 0;
-  position: relative;
-}
-.step-num {
-  width: 64px;
-  height: 64px;
-  border: 1px solid var(--gold);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--gold);
-  margin-bottom: 28px;
-  background: var(--surface);
-  position: relative;
-  z-index: 1;
-}
-.process-step h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
-  color: var(--text);
-}
-.process-step p {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.7;
-}
-@media(max-width:768px){
-  .process-steps::before{display:none;}
-  .process-step{padding:0 0 40px 0;}
-}
-
-/* â”€â”€â”€ ABOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-#about { background: var(--black); }
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-.about-img-wrap {
-  position: relative;
-}
-.about-img {
-  width: 100%;
-  aspect-ratio: 4/5;
-  object-fit: cover;
-  background: var(--surface2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-img-accent {
-  position: absolute;
-  bottom: -24px;
-  right: -24px;
-  width: 120px;
-  height: 120px;
-  border: 2px solid var(--gold);
-  z-index: -1;
-}
-.about-badges {
-  display: flex;
-  gap: 16px;
-  margin-top: 32px;
-  flex-wrap: wrap;
-}
-.badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--muted);
-}
-.badge svg { color: var(--gold); flex-shrink: 0; }
-@media(max-width:900px){
-  .about-grid{grid-template-columns:1fr;gap:48px;}
-  .about-img-accent{display:none;}
-}
-
-/* â”€â”€â”€ SERVICE AREA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-#service-area {
-  background: var(--surface);
-  padding: 80px 0;
-}
-.area-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-.area-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 24px;
-}
-.area-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: var(--muted);
-}
-.area-item::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--gold);
-  flex-shrink: 0;
-}
-.area-cta { margin-top: 36px; }
-@media(max-width:768px){
-  .area-grid{grid-template-columns:1fr;gap:40px;}
-}
-
-/* â”€â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-#contact { background: var(--black); }
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 80px;
-  align-items: start;
-}
-.contact-info { padding-top: 8px; }
-.contact-detail {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 28px;
-}
-.contact-detail .icon {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: var(--gold);
-}
-.contact-detail .dl { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 4px; }
-.contact-detail .dv { font-size: 15px; font-weight: 500; color: var(--text); }
-.contact-detail .dv a:hover { color: var(--gold); }
-/* FORM */
-.quote-form {
-  background: var(--surface);
-  padding: 48px;
-  border: 1px solid var(--border);
-}
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.form-group {
-  margin-bottom: 20px;
-}
-.form-group label {
-  display: block;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--muted);
-  margin-bottom: 8px;
-}
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  background: var(--black);
-  border: 1px solid var(--border);
-  color: var(--text);
-  padding: 13px 16px;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  border-radius: 2px;
-  outline: none;
-  transition: border-color .2s;
-  appearance: none;
-}
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus { border-color: var(--gold); }
-.form-group textarea { resize: vertical; min-height: 120px; }
-.form-group select { cursor: pointer; }
-.form-submit {
-  width: 100%;
-  background: var(--gold);
-  color: #000;
-  border: none;
-  padding: 16px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 2px;
-  font-family: 'Inter', sans-serif;
-  transition: background .2s;
-  margin-top: 8px;
-}
-.form-submit:hover { background: var(--gold-light); }
-.form-note { font-size: 12px; color: var(--muted); margin-top: 12px; text-align: center; }
-@media(max-width:900px){
-  .contact-grid{grid-template-columns:1fr;gap:48px;}
-  .quote-form{padding:32px 24px;}
-  .form-row{grid-template-columns:1fr;}
-}
-
-/* â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-footer {
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-  padding: 60px 0 32px;
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 48px;
-  margin-bottom: 48px;
-}
-.footer-brand .logo-main { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; margin-bottom: 4px; }
-.footer-brand .logo-sub  { font-size: 9px; text-transform: uppercase; letter-spacing: 3px; color: var(--gold); }
-.footer-brand p { font-size: 13px; color: var(--muted); margin-top: 16px; max-width: 260px; line-height: 1.7; }
-.footer-col h4 { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 16px; }
-.footer-col ul { list-style: none; }
-.footer-col ul li { font-size: 13px; color: var(--muted); padding: 5px 0; }
-.footer-col ul li a:hover { color: var(--gold); }
-.footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-.footer-bottom p { font-size: 12px; color: var(--muted); }
-@media(max-width:900px){
-  .footer-grid{grid-template-columns:1fr 1fr;gap:36px;}
-}
-@media(max-width:600px){
-  .footer-grid{grid-template-columns:1fr;}
-}
-
-/* â”€â”€â”€ SCROLL REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity .7s ease, transform .7s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: none;
-}
-.reveal-delay-1 { transition-delay: .1s; }
-.reveal-delay-2 { transition-delay: .2s; }
-.reveal-delay-3 { transition-delay: .3s; }
-
-/* â”€â”€â”€ MODAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.95);
-  z-index: 9999;
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
-.modal-overlay.open { display: flex; }
-.modal-img { max-width: 90vw; max-height: 85vh; object-fit: contain; }
-.modal-close {
-  position: absolute;
-  top: 24px; right: 32px;
-  font-size: 32px;
-  color: #fff;
-  cursor: pointer;
-  background: none;
-  border: none;
-  line-height: 1;
-}
-
-/* â”€â”€â”€ SUCCESS MESSAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-.form-success {
-  display: none;
-  text-align: center;
-  padding: 32px;
-  color: var(--gold);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
-}
-
-/* ── Featured portfolio grid (homepage) ─────────────────────── */
-.featured-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 280px 280px;
-  gap: 12px;
-}
-.featured-large {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-.featured-item {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 4px;
-  background: var(--surface2);
-}
-.featured-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transition: transform .6s ease;
-}
-.featured-item:hover img { transform: scale(1.04); }
-.featured-overlay {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,.75));
-  padding: 1.5rem 1rem .75rem;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-.featured-item:hover .featured-overlay { opacity: 1; }
-.featured-overlay span {
-  color: #fff;
-  font-size: .8rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-@media(max-width:900px){
-  .featured-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
-  .featured-large { grid-column: span 2; grid-row: span 1; height: 260px; }
-  .featured-item { height: 200px; }
-}
-@media(max-width:600px){
-  .featured-grid { grid-template-columns: 1fr; }
-  .featured-large { grid-column: span 1; height: 220px; }
-  .featured-item { height: 180px; }
-}
-
-/* ── Mobile call button ──────────────────────────────────────── */
-.mobile-call-btn {
-  display: none;
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  z-index: 999;
-  background: var(--gold);
-  color: #000;
-  text-align: center;
-  padding: 1rem;
-  font-family: var(--font-sans);
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: .08em;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-shadow: 0 -4px 20px rgba(0,0,0,.4);
-  gap: .5rem;
-  align-items: center;
-  justify-content: center;
-}
-.mobile-call-btn svg { width:20px; height:20px; flex-shrink:0; }
-@media(max-width:768px){
-  .mobile-call-btn { display: flex; }
-  /* add padding so footer content isn't hidden behind button */
-  footer { padding-bottom: 5rem !important; }
-}
-</style>
-</head>
-<body>
-
-<!-- MODAL -->
-<div class="modal-overlay" id="modal">
-  <button class="modal-close" onclick="closeModal()">âœ•</button>
-  <img class="modal-img" id="modal-img" src="" alt=""/>
-</div>
-
-<!-- NAV -->
-<nav id="nav">
-  <a href="#" class="nav-logo">
-    <span class="logo-main">High Country</span>
-    <span class="logo-sub">Finish &amp; Repair CO</span>
-  </a>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <div class="nav-toggle" id="nav-toggle" onclick="toggleNav()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg-img" id="hero-bg" style="background-image:url('images/cybertruck-side.jpg')"></div>
-  <div class="hero-bg"></div>
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span>Denver's Premier Vinyl &amp; Sign Specialists</span>
-      </div>
-      <h1 class="hero-title">
-        Precision craft.<br/>
-        <em>Elevated finish.</em>
-      </h1>
-      <p class="hero-sub">
-        From vehicle wraps to lobby signs, window tinting to wall graphics &mdash; 
-        we deliver flawless installs for clients who demand the best.
-        Serving Denver and the Front Range.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">
-          Get a Free Quote
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#portfolio" class="btn-outline">View Our Work</a>
-      </div>
-    </div>
-  </div>
-  <div class="hero-stats container">
-    <div class="hero-stat">
-      <div class="hs-num">500+</div>
-      <div class="hs-label">Installs Completed</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hs-num">10+</div>
-      <div class="hs-label">Years Experience</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hs-num">100%</div>
-      <div class="hs-label">Client Satisfaction</div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="container">
-    <span class="section-label reveal">What We Do</span>
-    <h2 class="section-title reveal">Comprehensive vinyl<br/>and sign solutions</h2>
-    <p class="section-body reveal">Every project is handled with precision from consultation through final install. No subcontractors, no shortcuts.</p>
-    <div class="services-grid">
-
-      <div class="service-card reveal">
-        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="4" y="16" width="40" height="22" rx="3"/>
-          <path d="M4 24h40M12 38v4M36 38v4"/>
-          <circle cx="12" cy="34" r="3"/><circle cx="36" cy="34" r="3"/>
-        </svg>
-        <h3>Vehicle Wraps &amp; Graphics</h3>
-        <p>Full wraps, partial wraps, and spot graphics for personal and commercial vehicles. Premium cast vinyl, precision-cut.</p>
-        <ul>
-          <li>Full vehicle wraps</li>
-          <li>Partial wraps</li>
-          <li>Spot graphics &amp; decals</li>
-          <li>Fleet branding</li>
-          <li>Paint protection overlays</li>
-        </ul>
-      </div>
-
-      <div class="service-card reveal reveal-delay-1">
-        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="6" y="6" width="36" height="36" rx="2"/>
-          <path d="M6 18h36M6 30h36M18 6v36M30 6v36" stroke-opacity=".4"/>
-          <path d="M6 6l36 36" stroke-opacity=".6"/>
-        </svg>
-        <h3>Window Tint &amp; Frosting</h3>
-        <p>Privacy, UV protection, and aesthetic enhancement for residential and commercial properties.</p>
-        <ul>
-          <li>Residential window tint</li>
-          <li>Commercial window film</li>
-          <li>Decorative frosted glass</li>
-          <li>Privacy partitions</li>
-          <li>Solar control film</li>
-        </ul>
-      </div>
-
-      <div class="service-card reveal reveal-delay-2">
-        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="4" y="4" width="40" height="30" rx="2"/>
-          <path d="M14 14h20M14 22h14"/>
-          <path d="M16 34v10M32 34v10M10 44h28"/>
-        </svg>
-        <h3>Lobby &amp; Building Signs</h3>
-        <p>Make a powerful first impression with professional interior and exterior signage that reflects your brand.</p>
-        <ul>
-          <li>Lobby &amp; reception signs</li>
-          <li>Stand-off / dimensional signs</li>
-          <li>Building fascia signs</li>
-          <li>Office &amp; suite signs</li>
-          <li>Wayfinding &amp; directories</li>
-        </ul>
-      </div>
-
-      <div class="service-card reveal reveal-delay-3">
-        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="4" y="8" width="40" height="32" rx="2"/>
-          <path d="M12 20c4-4 8 4 12 0s8-4 12 0"/>
-          <path d="M12 28c4-4 8 4 12 0s8-4 12 0"/>
-        </svg>
-        <h3>Wall Graphics &amp; Murals</h3>
-        <p>Transform interior spaces with bold, high-resolution wall graphics. Perfect for offices, retail, and hospitality.</p>
-        <ul>
-          <li>Full-wall murals</li>
-          <li>Branded wall graphics</li>
-          <li>Retail &amp; hospitality installs</li>
-          <li>Office motivational graphics</li>
-          <li>Removable options available</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio">
-  <div class="container">
-    <div class="section-header" style="text-align:center;margin-bottom:2.5rem;">
-      <span class="section-label reveal">Our Work</span>
-      <h2 class="section-title reveal">Built to Last.<br/>Built to Impress.</h2>
-      <p class="reveal" style="color:var(--text-muted);max-width:540px;margin:0 auto 2rem;">A sample of our recent commercial installs across Denver and the Front Range.</p>
-    </div>
-    <div class="featured-grid reveal">
-      <div class="featured-item featured-large" onclick="window.location='portfolio.html'">
-        <img src="images/omeara-room-wrap.jpg" alt="Full room wall wrap - O'Meara Ford / 106.7 KBPI"/>
-        <div class="featured-overlay"><span>Full Room Wall Wrap &mdash; O'Meara / 106.7 KBPI</span></div>
-      </div>
-      <div class="featured-item" onclick="window.location='portfolio.html'">
-        <img src="images/cybertruck-side.jpg" alt="Cybertruck full side graphics - Black Rock HVAC"/>
-        <div class="featured-overlay"><span>Cybertruck Graphics &mdash; Black Rock HVAC</span></div>
-      </div>
-      <div class="featured-item" onclick="window.location='portfolio.html'">
-        <img src="images/iheart-elevator-wrap.jpg" alt="Elevator door wrap - iHeartMedia"/>
-        <div class="featured-overlay"><span>Elevator Wrap &mdash; iHeartMedia</span></div>
-      </div>
-      <div class="featured-item" onclick="window.location='portfolio.html'">
-        <img src="images/novara-reception.jpg" alt="Dimensional lobby sign - Novara"/>
-        <div class="featured-overlay"><span>Dimensional Lobby Sign &mdash; Novara</span></div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-      <a href="portfolio.html" class="btn btn-primary">View Full Portfolio &rarr;</a>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section id="process">
-  <div class="container">
-    <span class="section-label reveal">How It Works</span>
-    <h2 class="section-title reveal">Simple process,<br/>flawless results</h2>
-    <div class="process-steps">
-      <div class="process-step reveal">
-        <div class="step-num">01</div>
-        <h3>Consultation &amp; Quote</h3>
-        <p>We discuss your project, take measurements, and provide a detailed, no-surprise quote. Most quotes are delivered within 24 hours.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-1">
-        <div class="step-num">02</div>
-        <h3>Design &amp; Approval</h3>
-        <p>For custom graphics, we produce a proof for your review and approval before a single piece of vinyl is cut.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-2">
-        <div class="step-num">03</div>
-        <h3>Precision Install</h3>
-        <p>Our installs are clean, precise, and done right the first time. We work around your schedule and leave the space spotless.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-3">
-        <div class="step-num">04</div>
-        <h3>Done. Guaranteed.</h3>
-        <p>We stand behind every install. If something isn't right, we make it right &mdash; no questions asked.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-img-wrap reveal">
-        <div class="about-img">
-          <!-- Replace with: <img src="images/about.jpg" alt="High Country Finish and Repair CO team" style="width:100%;height:100%;object-fit:cover"/> -->
-          <div style="text-align:center;color:var(--muted);padding:40px;">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="opacity:.3;margin:0 auto 12px"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-            <p style="font-size:12px">Add about/team photo</p>
-          </div>
-        </div>
-        <div class="about-img-accent"></div>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <span class="section-label">About Us</span>
-        <div class="gold-line"></div>
-        <h2 class="section-title">Denver's detail-<br/>obsessed install crew</h2>
-        <p class="section-body">
-          High Country Finish and Repair CO was built on a simple belief: every install should look like it came from the factory. We don't rush, we don't cut corners, and we don't hand your project off to someone else.
-        </p>
-        <p class="section-body" style="margin-top:16px;">
-          Based in the Denver metro area, we serve residential and commercial clients across the Front Range &mdash; from from one-off vehicle graphics to complete multi-location sign packages...
-        </p>
-        <div class="about-badges">
-          <div class="badge">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Fully Insured
-          </div>
-          <div class="badge">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            3M Preferred Installer
-          </div>
-          <div class="badge">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Fast Turnaround
-          </div>
-          <div class="badge">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            5-Star Rated
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICE AREA -->
-<section id="service-area">
-  <div class="container">
-    <div class="area-grid">
-      <div class="reveal">
-        <span class="section-label">Coverage</span>
-        <h2 class="section-title">Denver &amp; the<br/>Front Range</h2>
-        <p style="color:var(--muted);font-size:15px;margin-top:12px;line-height:1.75;">
-          We travel up to one hour in any direction from Denver. On-site commercial installs available for larger projects anywhere along the Front Range.
-        </p>
-        <div class="area-list">
-          <div class="area-item">Denver</div>
-          <div class="area-item">Arvada</div>
-          <div class="area-item">Aurora</div>
-          <div class="area-item">Lakewood</div>
-          <div class="area-item">Englewood</div>
-          <div class="area-item">Thornton</div>
-          <div class="area-item">Westminster</div>
-          <div class="area-item">Broomfield</div>
-          <div class="area-item">Littleton</div>
-          <div class="area-item">Castle Rock</div>
-          <div class="area-item">Boulder</div>
-          <div class="area-item">&amp; more</div>
-        </div>
-        <div class="area-cta">
-          <a href="#contact" class="btn-primary">Check My Area</a>
-        </div>
-      </div>
-      <div class="reveal reveal-delay-1" style="background:var(--surface2);border:1px solid var(--border);border-radius:2px;min-height:360px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;flex-direction:column;gap:10px;">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="opacity:.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span>Denver Metro Area</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <span class="section-label">Get In Touch</span>
-        <h2 class="section-title">Ready to start<br/>your project?</h2>
-        <p style="color:var(--muted);font-size:15px;margin:20px 0 40px;line-height:1.75;">
-          Fill out the form and we'll get back to you within 24 hours with a quote. Prefer to talk? Give us a call.
-        </p>
-        <div class="contact-detail">
-          <div class="icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.91-1a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
-          </div>
-          <div>
-            <div class="dl">Phone</div>
-            <div class="dv"><a href="tel:3038824656">303-882-4656</a></div>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <div class="dl">Email</div>
-            <div class="dv"><a href="mailto:highcountryfinishandrepairco@gmail.com">highcountryfinishandrepairco@gmail.com</a></div>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <div class="dl">Service Area</div>
-            <div class="dv">Denver &amp; surrounding areas (1hr radius)</div>
-          </div>
-        </div>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div class="quote-form">
-          <h3 style="font-size:26px;margin-bottom:28px;">Request a Free Quote</h3>
-          <form id="quote-form" action="https://formspree.io/f/mqeydnkg" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label>First Name *</label>
-                <input type="text" name="first_name" required/>
-              </div>
-              <div class="form-group">
-                <label>Last Name *</label>
-                <input type="text" name="last_name" required/>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label>Phone *</label>
-                <input type="tel" name="phone" required/>
-              </div>
-              <div class="form-group">
-                <label>Email *</label>
-                <input type="email" name="email" required/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Service Needed *</label>
-              <select name="service" required>
-                <option value="" disabled selected>Select a service...</option>
-                <option>Vehicle Wrap (Full)</option>
-                <option>Vehicle Wrap (Partial)</option>
-                <option>Spot Graphics / Decals</option>
-                <option>Window Tint â€” Residential</option>
-                <option>Window Tint â€” Commercial</option>
-                <option>Frosted / Decorative Window Film</option>
-                <option>Lobby / Reception Sign</option>
-                <option>Stand-Off / Dimensional Sign</option>
-                <option>Building / Fascia Sign</option>
-                <option>Office / Suite Sign</option>
-                <option>Wall Graphic / Mural</option>
-                <option>Multiple Services</option>
-                <option>Not Sure â€” Need Consultation</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Project Details</label>
-              <textarea name="message" placeholder="Tell us about your project â€” vehicle type, dimensions, timeline, any specific requirements..."></textarea>
-            </div>
-            <button type="submit" class="form-submit">Send My Quote Request â†’</button>
-            <p class="form-note">We respond within 24 hours. No spam, ever.</p>
-          </form>
-          <div class="form-success" id="form-success">
-            âœ“ Message received!<br/>
-            <span style="font-size:15px;font-family:Inter,sans-serif;color:var(--muted)">We'll be in touch within 24 hours.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="logo-main">High Country</div>
-        <div class="logo-sub">Finish &amp; Repair CO</div>
-        <p>Denver's premier vinyl wrap, sign, and window tint specialists. Precision installs, every time.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Vehicle Wraps</a></li>
-          <li><a href="#services">Spot Graphics</a></li>
-          <li><a href="#services">Window Tint</a></li>
-          <li><a href="#services">Window Frosting</a></li>
-          <li><a href="#services">Wall Graphics</a></li>
-          <li><a href="#services">Lobby Signs</a></li>
-          <li><a href="#services">Building Signs</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#process">Our Process</a></li>
-          <li><a href="#service-area">Service Area</a></li>
-          <li><a href="#contact">Get a Quote</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:3038824656">303-882-4656</a></li>
-          <li><a href="mailto:highcountryfinishandrepairco@gmail.com" style="word-break:break-word;font-size:12px">highcountryfinishandrepairco<br/>@gmail.com</a></li>
-          <li style="margin-top:8px">Denver, CO &amp; Surrounding Areas</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Â© 2026 High Country Finish and Repair CO. All rights reserved.</p>
-      <p>Denver, CO Â· 303-882-4656</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-// â”€â”€ Nav scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 40);
-});
-
-// â”€â”€ Mobile nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-function toggleNav() {
-  document.getElementById('nav-links').classList.toggle('open');
-}
-document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'));
-});
-
-// â”€â”€ Scroll reveal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-// â”€â”€ Gallery filter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-function filterGallery(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.gallery-item').forEach(item => {
-    const show = cat === 'all' || item.dataset.cat === cat;
-    item.style.display = show ? '' : 'none';
-  });
-}
-
-// â”€â”€ Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-function openModal(item) {
-  const img = item.querySelector('.gallery-img');
-  if (!img || !img.src || img.src.includes('undefined')) return;
-  document.getElementById('modal-img').src = img.src;
-  document.getElementById('modal').classList.add('open');
-}
-function closeModal() {
-  document.getElementById('modal').classList.remove('open');
-}
-document.getElementById('modal').addEventListener('click', function(e) {
-  if(e.target === this) closeModal();
-});
-document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
-
-// â”€â”€ Form â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-document.getElementById('quote-form').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const btn = this.querySelector('.form-submit');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-
-  // If Formspree not configured, fall back to mailto
-  const action = this.action;
-  if (action.includes('YOUR_FORM_ID')) {
-    const data  = new FormData(this);
-    const parts = [];
-    for (const [k,v] of data.entries()) parts.push(`${k}: ${v}`);
-    window.location.href = `mailto:highcountryfinishandrepairco@gmail.com?subject=Quote Request&body=${encodeURIComponent(parts.join('\n'))}`;
-    btn.textContent = 'Send My Quote Request â†’';
-    btn.disabled = false;
-    return;
-  }
-
-  try {
-    const res = await fetch(action, {
-      method: 'POST',
-      body: new FormData(this),
-      headers: { 'Accept': 'application/json' }
-    });
-    if (res.ok) {
-      this.style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
-    } else {
-      throw new Error();
-    }
-  } catch {
-    btn.textContent = 'Send My Quote Request â†’';
-    btn.disabled = false;
-    alert('Something went wrong. Please call us at 303-882-4656.');
-  }
-});
-</script>
-
-  <!-- Mobile sticky call button -->
-  <a href="tel:3038824656" class="mobile-call-btn" aria-label="Call High Country Finish and Repair">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.4 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.48-1.38a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    Call Now &nbsp;·&nbsp; 303-882-4656
-  </a>
-</body>
-</html>
-
-
-
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>High Country Finish and Repair CO | Denver Vinyl Wraps, Signs & Window Tint</title>
+
+<meta name="description" content="Denver's premier vinyl wrap, sign, and window tint specialists. Vehicle wraps, spot graphics, lobby signs, building signs, wall graphics, and commercial window frosting. Serving Denver and surrounding areas."/>
+
+<meta name="keywords" content="vinyl wrap Denver, vehicle wrap Denver, car wrap Colorado, window tint Denver, frosted glass Denver, lobby signs Denver, building signs Colorado, wall graphics — sign company Denver, High Country Finish"/>
+
+<meta property="og:title" content="High Country Finish and Repair CO | Denver Vinyl & Sign Specialists"/>
+
+<meta property="og:description" content="Premium vinyl wraps, signs, and window tint serving Denver and the Front Range."/>
+
+<meta property="og:type" content="website"/>
+
+<meta name="robots" content="index, follow"/>
+
+<link rel="canonical" href="https://highcountryfinishandrepairco.com/"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+
+/* â”€â”€â”€ RESET & BASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+
+  background: #0c0c0c;
+
+  color: #f0ece4;
+
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 400;
+
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+
+
+/* â”€â”€â”€ VARIABLES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+:root {
+
+  --gold:       #C9A84C;
+
+  --gold-light: #E8C97D;
+
+  --gold-dark:  #9B7A2B;
+
+  --black:      #0c0c0c;
+
+  --surface:    #141414;
+
+  --surface2:   #1c1c1c;
+
+  --border:     #2a2a2a;
+
+  --text:       #f0ece4;
+
+  --muted:      #888880;
+
+  --white:      #ffffff;
+
+}
+
+
+
+/* â”€â”€â”€ TYPOGRAPHY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+h1, h2, h3, h4 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.01em;
+
+}
+
+.section-label {
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  color: var(--gold);
+
+  margin-bottom: 16px;
+
+  display: block;
+
+}
+
+.section-title {
+
+  font-size: clamp(32px, 5vw, 52px);
+
+  color: var(--text);
+
+  margin-bottom: 20px;
+
+}
+
+.section-body {
+
+  font-size: 16px;
+
+  color: var(--muted);
+
+  max-width: 580px;
+
+  line-height: 1.75;
+
+}
+
+
+
+/* â”€â”€â”€ LAYOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+.container {
+
+  width: 100%;
+
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  padding: 0 40px;
+
+}
+
+section { padding: 100px 0; }
+
+@media(max-width:768px){ section{padding:70px 0;} .container{padding:0 24px;} }
+
+
+
+/* â”€â”€â”€ GOLD LINE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+.gold-line {
+
+  width: 48px;
+
+  height: 2px;
+
+  background: var(--gold);
+
+  margin-bottom: 24px;
+
+}
+
+
+
+/* â”€â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+nav {
+
+  position: fixed;
+
+  top: 0; left: 0; right: 0;
+
+  z-index: 1000;
+
+  padding: 24px 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  transition: background .3s, padding .3s, border-color .3s;
+
+  border-bottom: 1px solid transparent;
+
+}
+
+nav.scrolled {
+
+  background: rgba(12,12,12,.97);
+
+  backdrop-filter: blur(12px);
+
+  padding: 16px 40px;
+
+  border-color: var(--border);
+
+}
+
+.nav-logo {
+
+  display: flex;
+
+  flex-direction: column;
+
+  line-height: 1;
+
+}
+
+.nav-logo .logo-main {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  color: var(--text);
+
+  letter-spacing: 0.5px;
+
+}
+
+.nav-logo .logo-sub {
+
+  font-size: 9px;
+
+  font-weight: 500;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  color: var(--gold);
+
+  margin-top: 3px;
+
+}
+
+.nav-links {
+
+  display: flex;
+
+  gap: 36px;
+
+  list-style: none;
+
+  align-items: center;
+
+}
+
+.nav-links a {
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  letter-spacing: .5px;
+
+  color: #aaa;
+
+  transition: color .2s;
+
+}
+
+.nav-links a:hover { color: var(--text); }
+
+.nav-cta {
+
+  background: var(--gold);
+
+  color: #000 !important;
+
+  padding: 10px 22px;
+
+  border-radius: 2px;
+
+  font-size: 12px !important;
+
+  font-weight: 600 !important;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  transition: background .2s !important;
+
+}
+
+.nav-cta:hover { background: var(--gold-light) !important; }
+
+.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+
+.nav-toggle span { width: 24px; height: 1.5px; background: var(--text); transition: all .3s; }
+
+@media(max-width:900px){
+
+  nav{padding:20px 24px;}
+
+  nav.scrolled{padding:14px 24px;}
+
+  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(12,12,12,.98);
+
+    flex-direction:column;justify-content:center;gap:32px;z-index:999;}
+
+  .nav-links.open{display:flex;}
+
+  .nav-links a{font-size:18px!important;}
+
+  .nav-toggle{display:flex;z-index:1000;}
+
+}
+
+
+
+/* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+#hero {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 0;
+
+}
+
+.hero-bg {
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+
+    linear-gradient(135deg, rgba(12,12,12,.95) 0%, rgba(12,12,12,.7) 60%, rgba(12,12,12,.85) 100%),
+
+    radial-gradient(ellipse at 70% 50%, rgba(201,168,76,.08) 0%, transparent 60%);
+
+  z-index: 1;
+
+}
+
+.hero-bg-img {
+
+  position: absolute;
+
+  inset: 0;
+
+  background: url('images/hero.jpg') center/cover no-repeat;
+
+  z-index: 0;
+
+}
+
+/* Fallback gradient if no hero image */
+
+.hero-bg-img:not([style*="background-image"]),
+
+.hero-bg-img[style=""] {
+
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 40%, #141414 100%);
+
+}
+
+.hero-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 800px;
+
+}
+
+.hero-eyebrow {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 28px;
+
+}
+
+.hero-eyebrow span {
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: var(--gold);
+
+}
+
+.hero-eyebrow::before {
+
+  content: '';
+
+  width: 32px;
+
+  height: 1px;
+
+  background: var(--gold);
+
+}
+
+h1.hero-title {
+
+  font-size: clamp(44px, 7vw, 86px);
+
+  font-weight: 600;
+
+  line-height: 1.05;
+
+  margin-bottom: 28px;
+
+  color: var(--text);
+
+}
+
+h1.hero-title em {
+
+  font-style: italic;
+
+  color: var(--gold);
+
+}
+
+.hero-sub {
+
+  font-size: 17px;
+
+  color: var(--muted);
+
+  max-width: 520px;
+
+  margin-bottom: 48px;
+
+  line-height: 1.75;
+
+  font-weight: 300;
+
+}
+
+.hero-actions {
+
+  display: flex;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+
+}
+
+.btn-primary {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  background: var(--gold);
+
+  color: #000;
+
+  padding: 16px 32px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  border-radius: 2px;
+
+  transition: background .2s, transform .2s;
+
+}
+
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+.btn-outline {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border: 1px solid rgba(255,255,255,.2);
+
+  color: var(--text);
+
+  padding: 16px 32px;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  letter-spacing: .5px;
+
+  border-radius: 2px;
+
+  transition: border-color .2s, transform .2s;
+
+}
+
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
+
+.hero-stats {
+
+  position: absolute;
+
+  bottom: 48px;
+
+  z-index: 2;
+
+  display: flex;
+
+  gap: 56px;
+
+}
+
+.hero-stat .hs-num {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 36px;
+
+  font-weight: 600;
+
+  color: var(--gold);
+
+  line-height: 1;
+
+}
+
+.hero-stat .hs-label {
+
+  font-size: 11px;
+
+  color: var(--muted);
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  margin-top: 4px;
+
+}
+
+@media(max-width:600px){
+
+  .hero-stats{gap:32px;bottom:32px;}
+
+  .hero-stat .hs-num{font-size:28px;}
+
+}
+
+
+
+/* â”€â”€â”€ SERVICES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+#services { background: var(--surface); }
+
+.services-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: 2px;
+
+  margin-top: 60px;
+
+  border: 2px solid var(--border);
+
+}
+
+.service-card {
+
+  background: var(--surface);
+
+  padding: 40px 36px;
+
+  border-right: 2px solid var(--border);
+
+  border-bottom: 2px solid var(--border);
+
+  transition: background .3s;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+.service-card::after {
+
+  content: '';
+
+  position: absolute;
+
+  bottom: 0; left: 0; right: 0;
+
+  height: 2px;
+
+  background: var(--gold);
+
+  transform: scaleX(0);
+
+  transition: transform .3s;
+
+  transform-origin: left;
+
+}
+
+.service-card:hover { background: #1a1a1a; }
+
+.service-card:hover::after { transform: scaleX(1); }
+
+.service-icon {
+
+  width: 48px;
+
+  height: 48px;
+
+  margin-bottom: 24px;
+
+  color: var(--gold);
+
+}
+
+.service-card h3 {
+
+  font-size: 22px;
+
+  margin-bottom: 14px;
+
+  color: var(--text);
+
+}
+
+.service-card p {
+
+  font-size: 14px;
+
+  color: var(--muted);
+
+  line-height: 1.7;
+
+}
+
+.service-card ul {
+
+  list-style: none;
+
+  margin-top: 16px;
+
+}
+
+.service-card ul li {
+
+  font-size: 13px;
+
+  color: var(--muted);
+
+  padding: 4px 0;
+
+  border-top: 1px solid var(--border);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+}
+
+.service-card ul li::before {
+
+  content: '';
+
+  width: 4px;
+
+  height: 4px;
+
+  background: var(--gold);
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+
+}
+
+
+
+/* â”€â”€â”€ GALLERY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+#portfolio { background: var(--black); }
+
+.portfolio-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  margin-bottom: 48px;
+
+  flex-wrap: wrap;
+
+  gap: 24px;
+
+}
+
+.gallery-filter {
+
+  display: flex;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+
+}
+
+.filter-btn {
+
+  padding: 8px 18px;
+
+  border: 1px solid var(--border);
+
+  background: transparent;
+
+  color: var(--muted);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: .5px;
+
+  cursor: pointer;
+
+  border-radius: 2px;
+
+  transition: all .2s;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+.filter-btn:hover, .filter-btn.active {
+
+  border-color: var(--gold);
+
+  color: var(--gold);
+
+  background: rgba(201,168,76,.06);
+
+}
+
+.gallery-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+}
+
+.gallery-item {
+
+  position: relative;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  background: var(--surface2);
+
+  border-radius: 4px;
+
+}
+
+/* First item spans 2 columns and 2 rows for visual impact */
+
+.gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+
+.gallery-item:nth-child(1) .gallery-img { min-height: 520px; }
+
+@media(max-width:900px){
+
+  .gallery-grid{grid-template-columns:1fr 1fr;}
+
+  .gallery-item{grid-column:span 1!important;grid-row:span 1!important;}
+
+}
+
+@media(max-width:600px){
+
+  .gallery-grid{grid-template-columns:1fr;}
+
+}
+
+.gallery-img {
+
+  width: 100%;
+
+  height: 100%;
+
+  min-height: 300px;
+
+  max-height: 360px;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+
+  transition: transform .6s ease;
+
+}
+
+.gallery-item:hover .gallery-img { transform: scale(1.04); }
+
+.gallery-overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(to top, rgba(0,0,0,.8) 0%, transparent 60%);
+
+  opacity: 0;
+
+  transition: opacity .3s;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  padding: 20px;
+
+}
+
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+
+.gallery-label {
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: var(--text);
+
+  letter-spacing: .5px;
+
+}
+
+/* Placeholder gallery items */
+
+.gallery-placeholder {
+
+  min-height: 240px;
+
+  background: var(--surface2);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  border: 1px dashed var(--border);
+
+}
+
+.gallery-placeholder svg { opacity: .3; }
+
+
+
+/* â”€â”€â”€ PROCESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+#process { background: var(--surface); }
+
+.process-steps {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 0;
+
+  margin-top: 60px;
+
+  position: relative;
+
+}
+
+.process-steps::before {
+
+  content: '';
+
+  position: absolute;
+
+  top: 32px; left: 32px; right: 32px;
+
+  height: 1px;
+
+  background: var(--border);
+
+}
+
+.process-step {
+
+  padding: 0 32px 0 0;
+
+  position: relative;
+
+}
+
+.step-num {
+
+  width: 64px;
+
+  height: 64px;
+
+  border: 1px solid var(--gold);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  color: var(--gold);
+
+  margin-bottom: 28px;
+
+  background: var(--surface);
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+.process-step h3 {
+
+  font-size: 20px;
+
+  margin-bottom: 12px;
+
+  color: var(--text);
+
+}
+
+.process-step p {
+
+  font-size: 14px;
+
+  color: var(--muted);
+
+  line-height: 1.7;
+
+}
+
+@media(max-width:768px){
+
+  .process-steps::before{display:none;}
+
+  .process-step{padding:0 0 40px 0;}
+
+}
+
+
+
+/* â”€â”€â”€ ABOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+#about { background: var(--black); }
+
+.about-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+}
+
+.about-img-wrap {
+
+  position: relative;
+
+}
+
+.about-img {
+
+  width: 100%;
+
+  aspect-ratio: 4/5;
+
+  object-fit: cover;
+
+  background: var(--surface2);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.about-img-accent {
+
+  position: absolute;
+
+  bottom: -24px;
+
+  right: -24px;
+
+  width: 120px;
+
+  height: 120px;
+
+  border: 2px solid var(--gold);
+
+  z-index: -1;
+
+}
+
+.about-badges {
+
+  display: flex;
+
+  gap: 16px;
+
+  margin-top: 32px;
+
+  flex-wrap: wrap;
+
+}
+
+.badge {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 2px;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  color: var(--muted);
+
+}
+
+.badge svg { color: var(--gold); flex-shrink: 0; }
+
+@media(max-width:900px){
+
+  .about-grid{grid-template-columns:1fr;gap:48px;}
+
+  .about-img-accent{display:none;}
+
+}
+
+
+
+/* â”€â”€â”€ SERVICE AREA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+#service-area {
+
+  background: var(--surface);
+
+  padding: 80px 0;
+
+}
+
+.area-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+
+}
+
+.area-list {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-top: 24px;
+
+}
+
+.area-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 14px;
+
+  color: var(--muted);
+
+}
+
+.area-item::before {
+
+  content: '';
+
+  width: 6px;
+
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: var(--gold);
+
+  flex-shrink: 0;
+
+}
+
+.area-cta { margin-top: 36px; }
+
+@media(max-width:768px){
+
+  .area-grid{grid-template-columns:1fr;gap:40px;}
+
+}
+
+
+
+/* â”€â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+#contact { background: var(--black); }
+
+.contact-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.4fr;
+
+  gap: 80px;
+
+  align-items: start;
+
+}
+
+.contact-info { padding-top: 8px; }
+
+.contact-detail {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+
+  margin-bottom: 28px;
+
+}
+
+.contact-detail .icon {
+
+  width: 40px;
+
+  height: 40px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 2px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: var(--gold);
+
+}
+
+.contact-detail .dl { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 4px; }
+
+.contact-detail .dv { font-size: 15px; font-weight: 500; color: var(--text); }
+
+.contact-detail .dv a:hover { color: var(--gold); }
+
+/* FORM */
+
+.quote-form {
+
+  background: var(--surface);
+
+  padding: 48px;
+
+  border: 1px solid var(--border);
+
+}
+
+.form-row {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+
+}
+
+.form-group {
+
+  margin-bottom: 20px;
+
+}
+
+.form-group label {
+
+  display: block;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  color: var(--muted);
+
+  margin-bottom: 8px;
+
+}
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea {
+
+  width: 100%;
+
+  background: var(--black);
+
+  border: 1px solid var(--border);
+
+  color: var(--text);
+
+  padding: 13px 16px;
+
+  font-size: 14px;
+
+  font-family: 'Inter', sans-serif;
+
+  border-radius: 2px;
+
+  outline: none;
+
+  transition: border-color .2s;
+
+  appearance: none;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus { border-color: var(--gold); }
+
+.form-group textarea { resize: vertical; min-height: 120px; }
+
+.form-group select { cursor: pointer; }
+
+.form-submit {
+
+  width: 100%;
+
+  background: var(--gold);
+
+  color: #000;
+
+  border: none;
+
+  padding: 16px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  border-radius: 2px;
+
+  font-family: 'Inter', sans-serif;
+
+  transition: background .2s;
+
+  margin-top: 8px;
+
+}
+
+.form-submit:hover { background: var(--gold-light); }
+
+.form-note { font-size: 12px; color: var(--muted); margin-top: 12px; text-align: center; }
+
+@media(max-width:900px){
+
+  .contact-grid{grid-template-columns:1fr;gap:48px;}
+
+  .quote-form{padding:32px 24px;}
+
+  .form-row{grid-template-columns:1fr;}
+
+}
+
+
+
+/* â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+footer {
+
+  background: var(--surface);
+
+  border-top: 1px solid var(--border);
+
+  padding: 60px 0 32px;
+
+}
+
+.footer-grid {
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  gap: 48px;
+
+  margin-bottom: 48px;
+
+}
+
+.footer-brand .logo-main { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+
+.footer-brand .logo-sub  { font-size: 9px; text-transform: uppercase; letter-spacing: 3px; color: var(--gold); }
+
+.footer-brand p { font-size: 13px; color: var(--muted); margin-top: 16px; max-width: 260px; line-height: 1.7; }
+
+.footer-col h4 { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 16px; }
+
+.footer-col ul { list-style: none; }
+
+.footer-col ul li { font-size: 13px; color: var(--muted); padding: 5px 0; }
+
+.footer-col ul li a:hover { color: var(--gold); }
+
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+
+.footer-bottom p { font-size: 12px; color: var(--muted); }
+
+@media(max-width:900px){
+
+  .footer-grid{grid-template-columns:1fr 1fr;gap:36px;}
+
+}
+
+@media(max-width:600px){
+
+  .footer-grid{grid-template-columns:1fr;}
+
+}
+
+
+
+/* â”€â”€â”€ SCROLL REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+.reveal {
+
+  opacity: 0;
+
+  transform: translateY(28px);
+
+  transition: opacity .7s ease, transform .7s ease;
+
+}
+
+.reveal.visible {
+
+  opacity: 1;
+
+  transform: none;
+
+}
+
+.reveal-delay-1 { transition-delay: .1s; }
+
+.reveal-delay-2 { transition-delay: .2s; }
+
+.reveal-delay-3 { transition-delay: .3s; }
+
+
+
+/* â”€â”€â”€ MODAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+.modal-overlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0,0,0,.95);
+
+  z-index: 9999;
+
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.modal-overlay.open { display: flex; }
+
+.modal-img { max-width: 90vw; max-height: 85vh; object-fit: contain; }
+
+.modal-close {
+
+  position: absolute;
+
+  top: 24px; right: 32px;
+
+  font-size: 32px;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  background: none;
+
+  border: none;
+
+  line-height: 1;
+
+}
+
+
+
+/* â”€â”€â”€ SUCCESS MESSAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+.form-success {
+
+  display: none;
+
+  text-align: center;
+
+  padding: 32px;
+
+  color: var(--gold);
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 24px;
+
+}
+
+
+
+/* ── Featured portfolio grid (homepage) ─────────────────────── */
+
+.featured-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: 280px 280px;
+
+  gap: 12px;
+
+}
+
+.featured-large {
+
+  grid-column: span 2;
+
+  grid-row: span 2;
+
+}
+
+.featured-item {
+
+  position: relative;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  background: var(--surface2);
+
+}
+
+.featured-item img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+
+  transition: transform .6s ease;
+
+}
+
+.featured-item:hover img { transform: scale(1.04); }
+
+.featured-overlay {
+
+  position: absolute;
+
+  bottom: 0; left: 0; right: 0;
+
+  background: linear-gradient(transparent, rgba(0,0,0,.75));
+
+  padding: 1.5rem 1rem .75rem;
+
+  opacity: 0;
+
+  transition: opacity .3s ease;
+
+}
+
+.featured-item:hover .featured-overlay { opacity: 1; }
+
+.featured-overlay span {
+
+  color: #fff;
+
+  font-size: .8rem;
+
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
+
+}
+
+@media(max-width:900px){
+
+  .featured-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+
+  .featured-large { grid-column: span 2; grid-row: span 1; height: 260px; }
+
+  .featured-item { height: 200px; }
+
+}
+
+@media(max-width:600px){
+
+  .featured-grid { grid-template-columns: 1fr; }
+
+  .featured-large { grid-column: span 1; height: 220px; }
+
+  .featured-item { height: 180px; }
+
+}
+
+
+
+/* ── Mobile call button ──────────────────────────────────────── */
+
+.mobile-call-btn {
+
+  display: none;
+
+  position: fixed;
+
+  bottom: 0; left: 0; right: 0;
+
+  z-index: 999;
+
+  background: var(--gold);
+
+  color: #000;
+
+  text-align: center;
+
+  padding: 1rem;
+
+  font-family: var(--font-sans);
+
+  font-weight: 700;
+
+  font-size: 1rem;
+
+  letter-spacing: .08em;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  box-shadow: 0 -4px 20px rgba(0,0,0,.4);
+
+  gap: .5rem;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.mobile-call-btn svg { width:20px; height:20px; flex-shrink:0; }
+
+@media(max-width:768px){
+
+  .mobile-call-btn { display: flex; }
+
+  /* add padding so footer content isn't hidden behind button */
+
+  footer { padding-bottom: 5rem !important; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<!-- MODAL -->
+
+<div class="modal-overlay" id="modal">
+
+  <button class="modal-close" onclick="closeModal()">âœ•</button>
+
+  <img class="modal-img" id="modal-img" src="" alt=""/>
+
+</div>
+
+
+
+<!-- NAV -->
+
+<nav id="nav">
+
+  <a href="#" class="nav-logo">
+
+    <span class="logo-main">High Country</span>
+
+    <span class="logo-sub">Finish &amp; Repair CO</span>
+
+  </a>
+
+  <ul class="nav-links" id="nav-links">
+
+    <li><a href="#services">Services</a></li>
+
+    <li><a href="#portfolio">Portfolio</a></li>
+
+    <li><a href="#process">Process</a></li>
+
+    <li><a href="#about">About</a></li>
+
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+
+  </ul>
+
+  <div class="nav-toggle" id="nav-toggle" onclick="toggleNav()">
+
+    <span></span><span></span><span></span>
+
+  </div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section id="hero">
+
+  <div class="hero-bg-img" id="hero-bg" style="background-image:url('images/cybertruck-side.jpg')"></div>
+
+  <div class="hero-bg"></div>
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="hero-eyebrow">
+
+        <span>Denver's Premier Vinyl &amp; Sign Specialists</span>
+
+      </div>
+
+      <h1 class="hero-title">
+
+        Precision craft.<br/>
+
+        <em>Elevated finish.</em>
+
+      </h1>
+
+      <p class="hero-sub">
+
+        From vehicle wraps to lobby signs, window tinting to wall graphics &mdash; 
+
+        we deliver flawless installs for clients who demand the best.
+
+        Serving Denver and the Front Range.
+
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="#contact" class="btn-primary">
+
+          Get a Free Quote
+
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+
+        </a>
+
+        <a href="#portfolio" class="btn-outline">View Our Work</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="hero-stats container">
+
+    <div class="hero-stat">
+
+      <div class="hs-num">500+</div>
+
+      <div class="hs-label">Installs Completed</div>
+
+    </div>
+
+    <div class="hero-stat">
+
+      <div class="hs-num">10+</div>
+
+      <div class="hs-label">Years Experience</div>
+
+    </div>
+
+    <div class="hero-stat">
+
+      <div class="hs-num">100%</div>
+
+      <div class="hs-label">Client Satisfaction</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+  <div class="container">
+
+    <span class="section-label reveal">What We Do</span>
+
+    <h2 class="section-title reveal">Comprehensive vinyl<br/>and sign solutions</h2>
+
+    <p class="section-body reveal">Every project is handled with precision from consultation through final install. No subcontractors, no shortcuts.</p>
+
+    <div class="services-grid">
+
+
+
+      <div class="service-card reveal">
+
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+
+          <rect x="4" y="16" width="40" height="22" rx="3"/>
+
+          <path d="M4 24h40M12 38v4M36 38v4"/>
+
+          <circle cx="12" cy="34" r="3"/><circle cx="36" cy="34" r="3"/>
+
+        </svg>
+
+        <h3>Vehicle Wraps &amp; Graphics</h3>
+
+        <p>Full wraps, partial wraps, and spot graphics for personal and commercial vehicles. Premium cast vinyl, precision-cut.</p>
+
+        <ul>
+
+          <li>Full vehicle wraps</li>
+
+          <li>Partial wraps</li>
+
+          <li>Spot graphics &amp; decals</li>
+
+          <li>Fleet branding</li>
+
+          <li>Paint protection overlays</li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div class="service-card reveal reveal-delay-1">
+
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+
+          <rect x="6" y="6" width="36" height="36" rx="2"/>
+
+          <path d="M6 18h36M6 30h36M18 6v36M30 6v36" stroke-opacity=".4"/>
+
+          <path d="M6 6l36 36" stroke-opacity=".6"/>
+
+        </svg>
+
+        <h3>Window Tint &amp; Frosting</h3>
+
+        <p>Privacy, UV protection, and aesthetic enhancement for residential and commercial properties.</p>
+
+        <ul>
+
+          <li>Residential window tint</li>
+
+          <li>Commercial window film</li>
+
+          <li>Decorative frosted glass</li>
+
+          <li>Privacy partitions</li>
+
+          <li>Solar control film</li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div class="service-card reveal reveal-delay-2">
+
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+
+          <rect x="4" y="4" width="40" height="30" rx="2"/>
+
+          <path d="M14 14h20M14 22h14"/>
+
+          <path d="M16 34v10M32 34v10M10 44h28"/>
+
+        </svg>
+
+        <h3>Lobby &amp; Building Signs</h3>
+
+        <p>Make a powerful first impression with professional interior and exterior signage that reflects your brand.</p>
+
+        <ul>
+
+          <li>Lobby &amp; reception signs</li>
+
+          <li>Stand-off / dimensional signs</li>
+
+          <li>Building fascia signs</li>
+
+          <li>Office &amp; suite signs</li>
+
+          <li>Wayfinding &amp; directories</li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div class="service-card reveal reveal-delay-3">
+
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+
+          <rect x="4" y="8" width="40" height="32" rx="2"/>
+
+          <path d="M12 20c4-4 8 4 12 0s8-4 12 0"/>
+
+          <path d="M12 28c4-4 8 4 12 0s8-4 12 0"/>
+
+        </svg>
+
+        <h3>Wall Graphics &amp; Murals</h3>
+
+        <p>Transform interior spaces with bold, high-resolution wall graphics. Perfect for offices, retail, and hospitality.</p>
+
+        <ul>
+
+          <li>Full-wall murals</li>
+
+          <li>Branded wall graphics</li>
+
+          <li>Retail &amp; hospitality installs</li>
+
+          <li>Office motivational graphics</li>
+
+          <li>Removable options available</li>
+
+        </ul>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+  <div class="container">
+
+    <div class="section-header" style="text-align:center;margin-bottom:2.5rem;">
+
+      <span class="section-label reveal">Our Work</span>
+
+      <h2 class="section-title reveal">Built to Last.<br/>Built to Impress.</h2>
+
+      <p class="reveal" style="color:var(--text-muted);max-width:540px;margin:0 auto 2rem;">A sample of our recent commercial installs across Denver and the Front Range.</p>
+
+    </div>
+
+    <div class="featured-grid reveal">
+
+      <div class="featured-item featured-large" onclick="window.location='portfolio.html'">
+
+        <img src="images/omeara-room-wrap.jpg" alt="Full room wall wrap - O'Meara Ford / 106.7 KBPI"/>
+
+        <div class="featured-overlay"><span>Full Room Wall Wrap &mdash; O'Meara / 106.7 KBPI</span></div>
+
+      </div>
+
+      <div class="featured-item" onclick="window.location='portfolio.html'">
+
+        <img src="images/cybertruck-side.jpg" alt="Cybertruck full side graphics - Black Rock HVAC"/>
+
+        <div class="featured-overlay"><span>Cybertruck Graphics &mdash; Black Rock HVAC</span></div>
+
+      </div>
+
+      <div class="featured-item" onclick="window.location='portfolio.html'">
+
+        <img src="images/iheart-elevator-wrap.jpg" alt="Elevator door wrap - iHeartMedia"/>
+
+        <div class="featured-overlay"><span>Elevator Wrap &mdash; iHeartMedia</span></div>
+
+      </div>
+
+      <div class="featured-item" onclick="window.location='portfolio.html'">
+
+        <img src="images/novara-reception.jpg" alt="Dimensional lobby sign - Novara"/>
+
+        <div class="featured-overlay"><span>Dimensional Lobby Sign &mdash; Novara</span></div>
+
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem;" class="reveal">
+
+      <a href="portfolio.html" class="btn btn-primary">View Full Portfolio &rarr;</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PROCESS -->
+
+<section id="process">
+
+  <div class="container">
+
+    <span class="section-label reveal">How It Works</span>
+
+    <h2 class="section-title reveal">Simple process,<br/>flawless results</h2>
+
+    <div class="process-steps">
+
+      <div class="process-step reveal">
+
+        <div class="step-num">01</div>
+
+        <h3>Consultation &amp; Quote</h3>
+
+        <p>We discuss your project, take measurements, and provide a detailed, no-surprise quote. Most quotes are delivered within 24 hours.</p>
+
+      </div>
+
+      <div class="process-step reveal reveal-delay-1">
+
+        <div class="step-num">02</div>
+
+        <h3>Design &amp; Approval</h3>
+
+        <p>For custom graphics, we produce a proof for your review and approval before a single piece of vinyl is cut.</p>
+
+      </div>
+
+      <div class="process-step reveal reveal-delay-2">
+
+        <div class="step-num">03</div>
+
+        <h3>Precision Install</h3>
+
+        <p>Our installs are clean, precise, and done right the first time. We work around your schedule and leave the space spotless.</p>
+
+      </div>
+
+      <div class="process-step reveal reveal-delay-3">
+
+        <div class="step-num">04</div>
+
+        <h3>Done. Guaranteed.</h3>
+
+        <p>We stand behind every install. If something isn't right, we make it right &mdash; no questions asked.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div class="about-img-wrap reveal">
+
+        <div class="about-img">
+
+          <!-- Replace with: <img src="images/about.jpg" alt="High Country Finish and Repair CO team" style="width:100%;height:100%;object-fit:cover"/> -->
+
+          <div style="text-align:center;color:var(--muted);padding:40px;">
+
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="opacity:.3;margin:0 auto 12px"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+
+            <p style="font-size:12px">Add about/team photo</p>
+
+          </div>
+
+        </div>
+
+        <div class="about-img-accent"></div>
+
+      </div>
+
+      <div class="reveal reveal-delay-1">
+
+        <span class="section-label">About Us</span>
+
+        <div class="gold-line"></div>
+
+        <h2 class="section-title">Denver's detail-<br/>obsessed install crew</h2>
+
+        <p class="section-body">
+
+          High Country Finish and Repair CO was built on a simple belief: every install should look like it came from the factory. We don't rush, we don't cut corners, and we don't hand your project off to someone else.
+
+        </p>
+
+        <p class="section-body" style="margin-top:16px;">
+
+          Based in the Denver metro area, we serve residential and commercial clients across the Front Range &mdash; from from one-off vehicle graphics to complete multi-location sign packages...
+
+        </p>
+
+        <div class="about-badges">
+
+          <div class="badge">
+
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+
+            Fully Insured
+
+          </div>
+
+          <div class="badge">
+
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+
+            3M Preferred Installer
+
+          </div>
+
+          <div class="badge">
+
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+
+            Fast Turnaround
+
+          </div>
+
+          <div class="badge">
+
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+
+            5-Star Rated
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SERVICE AREA -->
+
+<section id="service-area">
+
+  <div class="container">
+
+    <div class="area-grid">
+
+      <div class="reveal">
+
+        <span class="section-label">Coverage</span>
+
+        <h2 class="section-title">Denver &amp; the<br/>Front Range</h2>
+
+        <p style="color:var(--muted);font-size:15px;margin-top:12px;line-height:1.75;">
+
+          We travel up to one hour in any direction from Denver. On-site commercial installs available for larger projects anywhere along the Front Range.
+
+        </p>
+
+        <div class="area-list">
+
+          <div class="area-item">Denver</div>
+
+          <div class="area-item">Arvada</div>
+
+          <div class="area-item">Aurora</div>
+
+          <div class="area-item">Lakewood</div>
+
+          <div class="area-item">Englewood</div>
+
+          <div class="area-item">Thornton</div>
+
+          <div class="area-item">Westminster</div>
+
+          <div class="area-item">Broomfield</div>
+
+          <div class="area-item">Littleton</div>
+
+          <div class="area-item">Castle Rock</div>
+
+          <div class="area-item">Boulder</div>
+
+          <div class="area-item">&amp; more</div>
+
+        </div>
+
+        <div class="area-cta">
+
+          <a href="#contact" class="btn-primary">Check My Area</a>
+
+        </div>
+
+      </div>
+
+      <div class="reveal reveal-delay-1" style="background:var(--surface2);border:1px solid var(--border);border-radius:2px;min-height:360px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;flex-direction:column;gap:10px;">
+
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="opacity:.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+
+        <span>Denver Metro Area</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+
+        <span class="section-label">Get In Touch</span>
+
+        <h2 class="section-title">Ready to start<br/>your project?</h2>
+
+        <p style="color:var(--muted);font-size:15px;margin:20px 0 40px;line-height:1.75;">
+
+          Fill out the form and we'll get back to you within 24 hours with a quote. Prefer to talk? Give us a call.
+
+        </p>
+
+        <div class="contact-detail">
+
+          <div class="icon">
+
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.91-1a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+
+          </div>
+
+          <div>
+
+            <div class="dl">Phone</div>
+
+            <div class="dv"><a href="tel:3038824656">303-882-4656</a></div>
+
+          </div>
+
+        </div>
+
+        <div class="contact-detail">
+
+          <div class="icon">
+
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+
+          </div>
+
+          <div>
+
+            <div class="dl">Email</div>
+
+            <div class="dv"><a href="mailto:highcountryfinishandrepairco@gmail.com">highcountryfinishandrepairco@gmail.com</a></div>
+
+          </div>
+
+        </div>
+
+        <div class="contact-detail">
+
+          <div class="icon">
+
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+
+          </div>
+
+          <div>
+
+            <div class="dl">Service Area</div>
+
+            <div class="dv">Denver &amp; surrounding areas (1hr radius)</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="reveal reveal-delay-1">
+
+        <div class="quote-form">
+
+          <h3 style="font-size:26px;margin-bottom:28px;">Request a Free Quote</h3>
+
+          <form id="quote-form" action="https://formspree.io/f/mqeydnkg" method="POST">
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label>First Name *</label>
+
+                <input type="text" name="first_name" required/>
+
+              </div>
+
+              <div class="form-group">
+
+                <label>Last Name *</label>
+
+                <input type="text" name="last_name" required/>
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label>Phone *</label>
+
+                <input type="tel" name="phone" required/>
+
+              </div>
+
+              <div class="form-group">
+
+                <label>Email *</label>
+
+                <input type="email" name="email" required/>
+
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>Service Needed *</label>
+
+              <select name="service" required>
+
+                <option value="" disabled selected>Select a service...</option>
+
+                <option>Vehicle Wrap (Full)</option>
+
+                <option>Vehicle Wrap (Partial)</option>
+
+                <option>Spot Graphics / Decals</option>
+
+                <option>Window Tint &rdquo;” Residential</option>
+
+                <option>Window Tint &rdquo;” Commercial</option>
+
+                <option>Frosted / Decorative Window Film</option>
+
+                <option>Lobby / Reception Sign</option>
+
+                <option>Stand-Off / Dimensional Sign</option>
+
+                <option>Building / Fascia Sign</option>
+
+                <option>Office / Suite Sign</option>
+
+                <option>Wall Graphic / Mural</option>
+
+                <option>Multiple Services</option>
+
+                <option>Not Sure &rdquo;” Need Consultation</option>
+
+              </select>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>Project Details</label>
+
+              <textarea name="message" placeholder="Tell us about your project &mdash; vehicle type, dimensions, timeline, any specific requirements..."></textarea>
+
+            </div>
+
+            <button type="submit" class="form-submit">Send My Quote Request &rarr;</button>
+
+            <p class="form-note">We respond within 24 hours. No spam, ever.</p>
+
+          </form>
+
+          <div class="form-success" id="form-success">
+
+            &#10003; Message received!<br/>
+
+            <span style="font-size:15px;font-family:Inter,sans-serif;color:var(--muted)">We'll be in touch within 24 hours.</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <div class="logo-main">High Country</div>
+
+        <div class="logo-sub">Finish &amp; Repair CO</div>
+
+        <p>Denver's premier vinyl wrap, sign, and window tint specialists. Precision installs, every time.</p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4>Services</h4>
+
+        <ul>
+
+          <li><a href="#services">Vehicle Wraps</a></li>
+
+          <li><a href="#services">Spot Graphics</a></li>
+
+          <li><a href="#services">Window Tint</a></li>
+
+          <li><a href="#services">Window Frosting</a></li>
+
+          <li><a href="#services">Wall Graphics</a></li>
+
+          <li><a href="#services">Lobby Signs</a></li>
+
+          <li><a href="#services">Building Signs</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4>Company</h4>
+
+        <ul>
+
+          <li><a href="#about">About Us</a></li>
+
+          <li><a href="#portfolio">Portfolio</a></li>
+
+          <li><a href="#process">Our Process</a></li>
+
+          <li><a href="#service-area">Service Area</a></li>
+
+          <li><a href="#contact">Get a Quote</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4>Contact</h4>
+
+        <ul>
+
+          <li><a href="tel:3038824656">303-882-4656</a></li>
+
+          <li><a href="mailto:highcountryfinishandrepairco@gmail.com" style="word-break:break-word;font-size:12px">highcountryfinishandrepairco<br/>@gmail.com</a></li>
+
+          <li style="margin-top:8px">Denver, CO &amp; Surrounding Areas</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>&copy; 2026 High Country Finish and Repair CO. All rights reserved.</p>
+
+      <p>Denver, CO &middot; 303-882-4656</p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script>
+
+// â”€â”€ Nav scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+const nav = document.getElementById('nav');
+
+window.addEventListener('scroll', () => {
+
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+
+});
+
+
+
+// â”€â”€ Mobile nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+function toggleNav() {
+
+  document.getElementById('nav-links').classList.toggle('open');
+
+}
+
+document.querySelectorAll('.nav-links a').forEach(a => {
+
+  a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'));
+
+});
+
+
+
+// â”€â”€ Scroll reveal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+const revealObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+
+
+// â”€â”€ Gallery filter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+function filterGallery(cat, btn) {
+
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+
+  btn.classList.add('active');
+
+  document.querySelectorAll('.gallery-item').forEach(item => {
+
+    const show = cat === 'all' || item.dataset.cat === cat;
+
+    item.style.display = show ? '' : 'none';
+
+  });
+
+}
+
+
+
+// â”€â”€ Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+function openModal(item) {
+
+  const img = item.querySelector('.gallery-img');
+
+  if (!img || !img.src || img.src.includes('undefined')) return;
+
+  document.getElementById('modal-img').src = img.src;
+
+  document.getElementById('modal').classList.add('open');
+
+}
+
+function closeModal() {
+
+  document.getElementById('modal').classList.remove('open');
+
+}
+
+document.getElementById('modal').addEventListener('click', function(e) {
+
+  if(e.target === this) closeModal();
+
+});
+
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+
+
+
+// â”€â”€ Form â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+document.getElementById('quote-form').addEventListener('submit', async function(e) {
+
+  e.preventDefault();
+
+  const btn = this.querySelector('.form-submit');
+
+  btn.textContent = 'Sending...';
+
+  btn.disabled = true;
+
+
+
+  // If Formspree not configured, fall back to mailto
+
+  const action = this.action;
+
+  if (action.includes('YOUR_FORM_ID')) {
+
+    const data  = new FormData(this);
+
+    const parts = [];
+
+    for (const [k,v] of data.entries()) parts.push(`${k}: ${v}`);
+
+    window.location.href = `mailto:highcountryfinishandrepairco@gmail.com?subject=Quote Request&body=${encodeURIComponent(parts.join('\n'))}`;
+
+    btn.textContent = 'Send My Quote Request &rarr;';
+
+    btn.disabled = false;
+
+    return;
+
+  }
+
+
+
+  try {
+
+    const res = await fetch(action, {
+
+      method: 'POST',
+
+      body: new FormData(this),
+
+      headers: { 'Accept': 'application/json' }
+
+    });
+
+    if (res.ok) {
+
+      this.style.display = 'none';
+
+      document.getElementById('form-success').style.display = 'block';
+
+    } else {
+
+      throw new Error();
+
+    }
+
+  } catch {
+
+    btn.textContent = 'Send My Quote Request &rarr;';
+
+    btn.disabled = false;
+
+    alert('Something went wrong. Please call us at 303-882-4656.');
+
+  }
+
+});
+
+</script>
+
+
+
+  <!-- Mobile sticky call button -->
+
+  <a href="tel:3038824656" class="mobile-call-btn" aria-label="Call High Country Finish and Repair">
+
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.4 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.48-1.38a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+
+    Call Now &nbsp;·&nbsp; 303-882-4656
+
+  </a>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
