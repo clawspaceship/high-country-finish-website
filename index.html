@@ -258,6 +258,24 @@ nav.scrolled {
 
 }
 
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.nav-logo-img:hover {
+  opacity: 0.8;
+}
+
+@media(max-width:900px) {
+  .nav-logo-img {
+    height: 32px;
+  }
+}
+
+
 .nav-links {
 
   display: flex;
@@ -2695,12 +2713,8 @@ if (servicesItem) {
 
 <nav id="nav">
 
-  <a href="#" class="nav-logo">
-
-    <span class="logo-main">High Country</span>
-
-    <span class="logo-sub">Finish &amp; Repair CO</span>
-
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png" alt="High Country Finish & Repair CO" class="nav-logo-img"/>
   </a>
 
   <div class="nav-links" id="nav-links">

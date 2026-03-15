@@ -553,6 +553,24 @@ nav.scrolled {
   margin-top: 3px;
 }
 
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.nav-logo-img:hover {
+  opacity: 0.8;
+}
+
+@media(max-width:900px) {
+  .nav-logo-img {
+    height: 32px;
+  }
+}
+
+
 .nav-links {
   display: flex;
   gap: 36px;
@@ -789,8 +807,7 @@ nav.scrolled {
 <!-- NAV -->
 <nav id="nav">
   <a href="/" class="nav-logo">
-    <span class="logo-main">High Country</span>
-    <span class="logo-sub">Finish & Repair CO</span>
+    <img src="/images/logo.png" alt="High Country Finish & Repair CO" class="nav-logo-img"/>
   </a>
   <div class="nav-links" id="nav-links">
     <a onclick="closeNav()" href="/">Home</a>
