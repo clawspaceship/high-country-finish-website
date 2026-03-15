@@ -190,6 +190,10 @@ nav.scrolled {
   .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(12,12,12,.98);
     flex-direction:column;justify-content:center;gap:32px;z-index:10001;}
   .nav-links.open{display:flex;}
+  .nav-item.open .nav-dropdown {
+    display: block;
+  }
+
   body.nav-open{overflow:hidden;position:fixed;width:100%;}
   .nav-links a{font-size:18px!important;}
   .nav-toggle{display:flex;z-index:1000;}
@@ -515,13 +519,26 @@ footer {
     <span class="logo-main">High Country</span>
     <span class="logo-sub">Finish &amp; Repair CO</span>
   </a>
-  <ul class="nav-links" id="nav-links">
-    <li><a onclick="closeNav()" href="index.html#services">Services</a></li>
-    <li><a onclick="closeNav()" href="portfolio.html" class="active">Portfolio</a></li>
-    <li><a onclick="closeNav()" href="index.html#process">Process</a></li>
-    <li><a onclick="closeNav()" href="index.html#about">About</a></li>
-    <li><a onclick="closeNav()" href="index.html#contact" class="nav-cta">Get a Quote</a></li>
-  </ul>
+  <div class="nav-links" id="nav-links">
+    <a onclick="closeNav()" href="/">Home</a>
+    <div class="nav-item">
+      <a onclick="closeNav()" href="/services.html">Services</a>
+      <div class="nav-dropdown">
+        <a onclick="closeNav()" href="/services/vehicle-wraps.html">Vehicle Wraps</a>
+        <a onclick="closeNav()" href="/services/spot-graphics.html">Spot Graphics</a>
+        <a onclick="closeNav()" href="/services/window-tint.html">Window Tint</a>
+        <a onclick="closeNav()" href="/services/window-frosting.html">Window Frosting</a>
+        <a onclick="closeNav()" href="/services/wall-graphics.html">Wall Graphics</a>
+        <a onclick="closeNav()" href="/services/lobby-signs.html">Lobby Signs</a>
+        <a onclick="closeNav()" href="/services/building-signs.html">Building Signs</a>
+        <a onclick="closeNav()" href="/services/custom-work.html">Custom Work</a>
+      </div>
+    </div>
+    <a onclick="closeNav()" href="/portfolio.html" class="active">Portfolio</a>
+    <a onclick="closeNav()" href="/our-process.html">Process</a>
+    <a onclick="closeNav()" href="/about-us.html">About</a>
+    <a onclick="closeNav()" href="/get-a-quote.html" class="nav-cta">Get a Quote</a>
+  </div>
   <div class="nav-toggle" id="nav-toggle" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </div>
@@ -960,6 +977,19 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')  lightboxNav(-1);
   if (e.key === 'ArrowRight') lightboxNav(1);
 });
+
+// Mobile dropdown toggle for Services
+if (window.innerWidth <= 768) {
+  const servicesLink = document.querySelector('.nav-item > a');
+  if (servicesLink) {
+    servicesLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      e.target.parentElement.classList.toggle('open');
+    });
+  }
+}
+
 </script>
 
 </body>
