@@ -1110,92 +1110,67 @@ nav.scrolled {
 </a>
 
 <script>
-// ── Nav scroll ──────────────────────────────────────────────
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 40);
-});
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', function() {
 
-// ── Mobile nav ──────────────────────────────────────────────
+// Mobile menu toggle
 function toggleNav() {
   const links = document.getElementById('nav-links');
   const toggle = document.getElementById('nav-toggle');
+  if (!links || !toggle) {
+    console.error('Menu elements not found!');
+    return;
+  }
   const isOpen = links.classList.toggle('open');
   toggle.classList.toggle('is-open', isOpen);
   document.body.classList.toggle('nav-open', isOpen);
 }
 
+function closeNav() {
+  const links = document.getElementById('nav-links');
+  const toggle = document.getElementById('nav-toggle');
+  if (!links || !toggle) return;
+  links.classList.remove('open');
+  toggle.classList.remove('is-open');
+  document.body.classList.remove('nav-open');
+  // Also close Services dropdown
+  const servicesItem = document.querySelector('.nav-item');
+  if (servicesItem) {
+    servicesItem.classList.remove('open');
+  }
+}
+
+// Make toggleNav and closeNav available globally for onclick handlers
+window.toggleNav = toggleNav;
+window.closeNav = closeNav;
+
+// Close menu when clicking links (except Services parent)
 document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'));
-});
-
-// ── Lightbox ────────────────────────────────────────────────
-let allCells = [];
-let currentIdx = 0;
-
-function buildCellList() {
-  allCells = Array.from(document.querySelectorAll('.pf-photo-cell'));
-}
-
-function openLightbox(cell) {
-  buildCellList();
-  currentIdx = allCells.indexOf(cell);
-  showLightboxAt(currentIdx);
-  document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-function showLightboxAt(idx) {
-  const cell = allCells[idx];
-  const img = cell.querySelector('img');
-  const caption = cell.querySelector('.pf-caption');
-  document.getElementById('lightbox-img').src = img.src;
-  document.getElementById('lightbox-img').alt = img.alt;
-  document.getElementById('lightbox-caption').textContent = caption ? caption.textContent : '';
-}
-
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-function lightboxNav(dir) {
-  currentIdx = (currentIdx + dir + allCells.length) % allCells.length;
-  showLightboxAt(currentIdx);
-}
-
-document.getElementById('lightbox').addEventListener('click', function(e) {
-  if (e.target === this || e.target === document.getElementById('lightbox-img')) {
-    if (e.target === this) closeLightbox();
+  if (!a.parentElement.classList.contains('nav-item')) {
+    a.addEventListener('click', closeNav);
   }
 });
 
-document.addEventListener('keydown', e => {
-  if (!document.getElementById('lightbox').classList.contains('open')) return;
-  if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowLeft')  lightboxNav(-1);
-  if (e.key === 'ArrowRight') lightboxNav(1);
-});
+// Mobile Services dropdown toggle
+const servicesItem = document.querySelector('.nav-item');
+if (servicesItem) {
+  const servicesLink = servicesItem.querySelector('a');
+  if (servicesLink) {
+    servicesLink.addEventListener('click', (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        e.stopPropagation();
+        servicesItem.classList.toggle('open');
+      }
+    });
+  }
+  
+  servicesItem.querySelectorAll('.nav-dropdown a').forEach(link => {
+    link.addEventListener('click', closeNav);
+  });
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}); // End DOMContentLoaded
 
 </script>
 
