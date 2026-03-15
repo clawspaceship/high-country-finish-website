@@ -643,6 +643,25 @@ footer {
   .footer-grid{grid-template-columns:1fr;}
 }
 
+
+
+/* Enhanced clickable cards */
+.service-card,
+.blog-card {
+  cursor: pointer;
+  user-select: none;
+}
+
+.service-card.hovering,
+.blog-card.hovering {
+  transform: translateY(-4px);
+}
+
+.service-card:active,
+.blog-card:active {
+  transform: translateY(-2px);
+}
+
 </style>
 </head>
 <body>
@@ -861,6 +880,42 @@ if (servicesItem) {
 }
 
 }); // End DOMContentLoaded
+
+
+
+// Make all cards fully clickable
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all cards with links inside
+  const cards = document.querySelectorAll('.service-card, .blog-card, .service-card-link');
+  
+  cards.forEach(card => {
+    // Find the first link inside the card
+    const link = card.querySelector('a');
+    if (link) {
+      // Make entire card clickable
+      card.style.cursor = 'pointer';
+      
+      card.addEventListener('click', function(e) {
+        // Don't double-click if user clicks the actual link
+        if (e.target.tagName === 'A') return;
+        
+        // Navigate to the link's href
+        window.location.href = link.href;
+      });
+      
+      // Add visual feedback on hover
+      card.addEventListener('mouseenter', function() {
+        if (!card.classList.contains('hovering')) {
+          card.classList.add('hovering');
+        }
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        card.classList.remove('hovering');
+      });
+    }
+  });
+});
 
 </script>
 
