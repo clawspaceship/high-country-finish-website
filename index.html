@@ -2579,7 +2579,7 @@ footer {
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "High Country Finish & Repair CO",
+  "name": "High Country Finish and Repair CO",
   "url": "https://highcountryfinish.com/",
   "telephone": "303-882-4656",
   "address": {
@@ -2592,9 +2592,18 @@ footer {
   },
   "description": "Denver's premier commercial vinyl graphics and sign installation company. Vehicle graphics, lobby signs, wall murals, window frosting, and storefront graphics serving the Denver metro and Front Range.",
   "areaServed": [
-    "Denver", "Arvada", "Aurora", "Lakewood", "Englewood",
-    "Thornton", "Westminster", "Broomfield", "Littleton",
-    "Castle Rock", "Boulder", "Front Range Colorado"
+    "Denver",
+    "Arvada",
+    "Aurora",
+    "Lakewood",
+    "Englewood",
+    "Thornton",
+    "Westminster",
+    "Broomfield",
+    "Littleton",
+    "Castle Rock",
+    "Boulder",
+    "Front Range Colorado"
   ],
   "serviceType": [
     "Sign Installation",
@@ -2608,92 +2617,17 @@ footer {
     "Building Signs",
     "Fleet Branding",
     "Sign Shop Subcontractor"
-  ]
+  ],
+  "image": "https://highcountryfinish.com/images/peak-elevator-lobby-sign.jpg",
+  "priceRange": "$$"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Wait for DOM to be ready
-document.addEventListener('DOMContentLoaded', function() {
-
-// Mobile menu toggle
-function toggleNav() {
-  const links = document.getElementById('nav-links');
-  const toggle = document.getElementById('nav-toggle');
-  const isOpen = links.classList.toggle('open');
-  toggle.classList.toggle('is-open', isOpen);
-  document.body.classList.toggle('nav-open', isOpen);
-}
-
-function closeNav() {
-  const links = document.getElementById('nav-links');
-  const toggle = document.getElementById('nav-toggle');
-  links.classList.remove('open');
-  toggle.classList.remove('is-open');
-  document.body.classList.remove('nav-open');
-  // Also close Services dropdown
-  const servicesItem = document.querySelector('.nav-item');
-  if (servicesItem) {
-    servicesItem.classList.remove('open');
-  }
-}
-
-// Make toggleNav and closeNav available globally for onclick handlers
-window.toggleNav = toggleNav;
-window.closeNav = closeNav;
-
-// Close menu when clicking links (except Services parent)
-document.querySelectorAll('.nav-links a').forEach(a => {
-  if (!a.parentElement.classList.contains('nav-item')) {
-    a.addEventListener('click', closeNav);
-  }
-});
-
-// Mobile Services dropdown toggle - PREVENT NAVIGATION
-const servicesItem = document.querySelector('.nav-item');
-if (servicesItem) {
-  const servicesLink = servicesItem.querySelector('a');
-  if (servicesLink) {
-    servicesLink.addEventListener('click', (e) => {
-      // On mobile, prevent navigation and toggle dropdown
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        e.stopPropagation();
-        servicesItem.classList.toggle('open');
-        console.log('Services dropdown toggled:', servicesItem.classList.contains('open'));
-      }
-      // On desktop, allow normal dropdown hover (link still works)
-    });
-  }
-  
-  // Close menu when clicking dropdown links
-  servicesItem.querySelectorAll('.nav-dropdown a').forEach(link => {
-    link.addEventListener('click', closeNav);
-  });
-}
-
-}); // End DOMContentLoaded
-
 </script>
 
-</head>
+    <meta name="geo.region" content="US-CO">
+    <meta name="geo.placename" content="Denver">
+    <meta name="theme-color" content="#0c0c0c">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  </head>
 
 <body>
 
@@ -2716,7 +2650,7 @@ if (servicesItem) {
 <nav id="nav">
 
   <a href="/" class="nav-logo">
-    <img src="/images/logo.png" alt="High Country Finish & Repair CO" class="nav-logo-img"/>
+    <img src="/images/logo.png" width="1133" height="964" alt="High Country Finish and Repair CO" class="nav-logo-img"/>
   </a>
 
   <div class="nav-links" id="nav-links">
@@ -3103,7 +3037,7 @@ if (servicesItem) {
     <div class="hero-gallery-grid reveal">
 
       <div class="hero-gallery-item" onclick="openGroupModal(this)">
-        <img src="images/peak-elevator-lobby-sign.jpg"
+        <img src="images/peak-elevator-lobby-sign.jpg" width="1280" height="960"
              alt="lobby sign installation Denver - PEAK Elevator Performance Group acrylic panel"
              loading="lazy"/>
         <div class="hero-gallery-overlay">
@@ -3112,7 +3046,7 @@ if (servicesItem) {
       </div>
 
       <div class="hero-gallery-item" onclick="openGroupModal(this)">
-        <img src="images/novara-frosted-glass.jpg"
+        <img src="images/novara-frosted-glass.jpg" width="1280" height="960"
              alt="office reception signage and frosted glass installation Denver - Novara"
              loading="lazy"/>
         <div class="hero-gallery-overlay">
@@ -3121,7 +3055,7 @@ if (servicesItem) {
       </div>
 
       <div class="hero-gallery-item" onclick="openGroupModal(this)">
-        <img src="images/omeara-room-wrap.jpg"
+        <img src="images/omeara-room-wrap.jpg" width="1280" height="814"
              alt="full room wrap installation Denver - vinyl wall and ceiling graphics"
              loading="lazy"/>
         <div class="hero-gallery-overlay">
@@ -3130,7 +3064,7 @@ if (servicesItem) {
       </div>
 
       <div class="hero-gallery-item" onclick="openGroupModal(this)">
-        <img src="images/buffalo-restaurant-exterior.jpg"
+        <img src="images/buffalo-restaurant-exterior.jpg" width="1280" height="960"
              alt="exterior storefront sign installation Front Range Colorado - The Buffalo Restaurant"
              loading="lazy"/>
         <div class="hero-gallery-overlay">
@@ -3139,7 +3073,7 @@ if (servicesItem) {
       </div>
 
       <div class="hero-gallery-item" onclick="openGroupModal(this)">
-        <img src="images/cybertruck-side.jpg"
+        <img src="images/cybertruck-side.jpg" width="1280" height="960"
              alt="vehicle wrap installation Denver - Cybertruck Black Rock vinyl lettering side view"
              loading="lazy"/>
         <div class="hero-gallery-overlay">
@@ -3770,7 +3704,7 @@ footer {
       </div>
 
       <div class="reveal reveal-delay-1">
-        <img src="images/service-area-map.jpg"
+        <img src="images/service-area-map.jpg" width="792" height="800"
              alt="service area map - Denver Front Range Colorado vinyl installation coverage"
              style="width:100%;border-radius:4px;border:1px solid var(--border);display:block;" />
       </div>
@@ -3986,7 +3920,7 @@ footer {
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo-main">High Country</div>
-        <div class="logo-sub">Finish & Repair CO</div>
+        <div class="logo-sub">Finish and Repair CO</div>
         <p>Denver's premier vinyl wrap, sign, and window tint specialists. Precision installs, every time.</p>
       </div>
       <div class="footer-col">
